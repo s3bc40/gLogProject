@@ -20,31 +20,29 @@ from Bio.Blast import NCBIWWW
 # --------------------------
 class Fasta():
     def __init__(self):
-        self._multiFasta = []
+        self._seqRecord = None
     
     @property
     def fasta(self):
-        print("Chargement fasta")
-        return self._multiFasta
+        print("Chargement fasta\n")
+        return self._seqRecord
     
     @fasta.setter
     def fasta(self,fasta):
-        self._multiFasta = fasta
+        self._seqRecord = fasta
+        print("# Fasta changé avec succès #\n")
     
     def readFasta(self):
-        record = []
         error = True
         while(error == True):
             print("Path du fichier avec extension :")
             file = input()
             if(path.isfile(file)):
-                print("Path correct")
+                print("# Path correct# \n")
                 error = False
             else:
                 print("Path Incorrect")
-        for seq_record in SeqIO.parse(file, "fasta"):
-            record.append(seq_record)
-        self.fasta = record
+        self.fasta = SeqIO.read(file, "fasta")
 
 # --------------------------
 #       Main

@@ -264,3 +264,128 @@
 </Iteration>
 </BlastOutput_iterations>
 </BlastOutput>
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastx</BlastOutput_program>
+  <BlastOutput_version>BLASTX 2.8.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_58967</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>1000</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_58967</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>1000</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|311033371|sp|Q14147.2|DHX34_HUMAN</Hit_id>
+  <Hit_def>RecName: Full=Probable ATP-dependent RNA helicase DHX34; AltName: Full=DEAH box protein 34</Hit_def>
+  <Hit_accession>Q14147</Hit_accession>
+  <Hit_len>1143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>34.2686</Hsp_bit-score>
+      <Hsp_score>77</Hsp_score>
+      <Hsp_evalue>1.82689</Hsp_evalue>
+      <Hsp_query-from>115</Hsp_query-from>
+      <Hsp_query-to>207</Hsp_query-to>
+      <Hsp_hit-from>1022</Hsp_hit-from>
+      <Hsp_hit-to>1052</Hsp_hit-to>
+      <Hsp_query-frame>-2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>14</Hsp_identity>
+      <Hsp_positive>18</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>31</Hsp_align-len>
+      <Hsp_qseq>HLPNTMTIFHLSPTPSQGGQVIADIGTYSCL</Hsp_qseq>
+      <Hsp_hseq>HLPGLFGSSTLSPHPTKGGYAVTDFLTYNCL</Hsp_hseq>
+      <Hsp_midline>HLP       LSP P++GG  + D  TY+CL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|75211702|sp|Q9SVG7.1|BBE17_ARATH</Hit_id>
+  <Hit_def>RecName: Full=Berberine bridge enzyme-like 17; Short=AtBBE-like 17; Flags: Precursor</Hit_def>
+  <Hit_accession>Q9SVG7</Hit_accession>
+  <Hit_len>528</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>33.4982</Hsp_bit-score>
+      <Hsp_score>75</Hsp_score>
+      <Hsp_evalue>3.0891</Hsp_evalue>
+      <Hsp_query-from>154</Hsp_query-from>
+      <Hsp_query-to>291</Hsp_query-to>
+      <Hsp_hit-from>217</Hsp_hit-from>
+      <Hsp_hit-to>262</Hsp_hit-to>
+      <Hsp_query-frame>-2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>16</Hsp_identity>
+      <Hsp_positive>25</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>46</Hsp_align-len>
+      <Hsp_qseq>IARPLLSHCRTYRGAYKVLFCQWKLVVVHLPNTMTIFHLSPTPSQG</Hsp_qseq>
+      <Hsp_hseq>LGRDLLWAIRGGGGASFGVILSWKINLVDVPKTVTVFKVNKTLEQG</Hsp_hseq>
+      <Hsp_midline>+ R LL   R   GA   +   WK+ +V +P T+T+F ++ T  QG</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|57012713|sp|Q90240.1|CBPD_ANAPL</Hit_id>
+  <Hit_def>RecName: Full=Carboxypeptidase D; AltName: Full=Metallocarboxypeptidase D; AltName: Full=gp180; AltName: Full=p170; Flags: Precursor</Hit_def>
+  <Hit_accession>Q90240</Hit_accession>
+  <Hit_len>1389</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>32.7278</Hsp_bit-score>
+      <Hsp_score>73</Hsp_score>
+      <Hsp_evalue>5.83348</Hsp_evalue>
+      <Hsp_query-from>670</Hsp_query-from>
+      <Hsp_query-to>870</Hsp_query-to>
+      <Hsp_hit-from>1035</Hsp_hit-from>
+      <Hsp_hit-to>1101</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>21</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>INPSVSPGGRFVSTRRPCLGSAELGTV*KESRDFRAGIVSIY--YATTTAPVARSLEDILAIEQRFHSS</Hsp_qseq>
+      <Hsp_hseq>IVPSLNPDGREIAQERGC--TSKLGHANAHGRDLDTDFTSNYSWYSGTREPETKAIIENLILKQDFSLS</Hsp_hseq>
+      <Hsp_midline>I PS++P GR ++  R C  +++LG      RD      S Y  Y+ T  P  +++ + L ++Q F  S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>470977</Statistics_db-num>
+      <Statistics_db-len>177759233</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
