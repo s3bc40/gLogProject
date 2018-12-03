@@ -29,7 +29,7 @@ if __name__ == "__main__":
     print("# Lancement Blast #\n")
     result_handle = NCBIWWW.qblast("blastx", "swissprot", fasta.seq)
     print("# Ecriture dans XML #\n")
-    blast_result = open("data/my_blast.xml", "a") 
+    blast_result = open("data/my_blast.xml", "w")
     blast_result.write(result_handle.read())
     blast_result.close()
     result_handle.close()
