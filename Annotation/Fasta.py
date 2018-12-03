@@ -30,7 +30,7 @@ class Fasta():
     @fasta.setter
     def fasta(self,fasta):
         self._seqRecord = fasta
-        print("# Fasta changé avec succès #\n")
+        print("# Fasta chargé avec succès #\n")
     
     def readFasta(self):
         error = True
