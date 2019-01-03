@@ -6,26 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+<link rel="stylesheet" href="./css/style.css">
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Image de la page accueil */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("Harvi.png");
-  min-height: 70%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
 <body>
 
 <!-- Barre de navigation -->
@@ -81,7 +63,7 @@ body, html {
     </div>
     <div class="w3-quarter">
       <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">La reconstruction de réseau métabollique</p>
+      <p class="w3-large">La reconstruction de réseaux métaboliques</p>
       <p></p>
     </div>
   </div>
@@ -177,32 +159,7 @@ body, html {
   <p>Effectué via <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
-<script>
-// 
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// 
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Fermeture de la sidebar avec le bouton
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
