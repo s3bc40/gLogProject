@@ -9,9 +9,14 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("Harvi.png");
+  background-image: url("harvi.png");
   min-height: 70%;
 }
+
+.responsive {
+    width: 95%;
+    height: auto;
+  }
 
 .w3-bar .w3-button {
   padding: 16px;
