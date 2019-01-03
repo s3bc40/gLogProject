@@ -13,11 +13,12 @@
 # --------------------------
 import os.path as path
 from Bio import SeqIO
+from Bio.Blast import NCBIWWW
 
 # --------------------------
 #       Class
 # --------------------------
-class multFasta():
+class Fasta():
     def __init__(self):
         self._seqRecord = None
     
@@ -41,7 +42,7 @@ class multFasta():
                 error = False
             else:
                 print("Path Incorrect")
-        self.fasta = list(SeqIO.parse(file, "fasta"))
+        self.fasta = SeqIO.read(file, "fasta")
 
 # --------------------------
 #       Main
