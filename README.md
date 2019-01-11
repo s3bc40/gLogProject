@@ -8,6 +8,12 @@
 pip3 install Django==2.1.5 
 ```
 
+- Install Biopython : 
+
+```bash
+pip3 install biopython
+```
+
 Then clone the project with this command :
 
 ```bash
@@ -17,6 +23,7 @@ git clone https://github.com/s3bc40/gLogProject.git
 To run the server :
 
 ```bash
+cd gLogProject/
 git checkout annotation
 cd Annotation/Dj-annotation
 python3 manage.py runserver
