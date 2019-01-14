@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.http import HttpResponseRedirect
 
 from .forms import TextForm, FileForm
-from .scripts import main,Fasta,write
+from .scripts import main,Fasta #add write quand y'aura le fichier dans les scripts
 
 # Create your views here.
 def home(request):
