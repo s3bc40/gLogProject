@@ -1,8 +1,9 @@
 from django.shortcuts import render, HttpResponse
 from django.http import HttpResponseRedirect
+from django.core.files.storage import FileSystemStorage
 
 from .forms import TextForm, FileForm
-from .scripts import main,Fasta #add write quand y'aura le fichier dans les scripts
+from .scripts import Process #add write quand y'aura le fichier dans les scripts
 
 # Create your views here.
 def home(request):
@@ -15,6 +16,10 @@ def process(request):
         if (text_form.is_valid()):
             return HttpResponse('<h1>Success text</h1>')
         if (file_form.is_valid()):
+            uploaded_file = request.FILES['fasta_file']
+            fs = FileSystemStorage()
+            fs.save(uploaded_file.name,uploaded_file)
+            Process.process(fs.path(uploaded_file.name))
             return HttpResponse('<h1>Success file</h1>')
 
     # if a GET (or any other method) we'll create a blank form

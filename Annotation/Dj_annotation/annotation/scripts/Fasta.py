@@ -32,23 +32,15 @@ class multFasta():
         print("# Fasta chargé avec succès #\n")
     
     def readFasta(self,file):
-        # error = True
-        # while(error == True):
-        #     print("Path du fichier avec extension :")
-        #     file = input()
-        #     if(path.isfile(file)):
-        #         print("# Path correct# \n")
-        #         error = False
-        #     else:
-        #         print("Path Incorrect")
         self.fasta = list(SeqIO.parse(file, "fasta"))
+        return file
 
 # --------------------------
 #       Main
 # --------------------------
 if __name__ == "__main__":
     obj = Fasta()
-    obj.readFasta(file)
+    obj.readFasta()
     fasta = obj.fasta
     print(fasta)
 

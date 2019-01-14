@@ -42,6 +42,7 @@ class multFasta():
             else:
                 print("Path Incorrect")
         self.fasta = list(SeqIO.parse(file, "fasta"))
+        return file
 
 # --------------------------
 #       Main
