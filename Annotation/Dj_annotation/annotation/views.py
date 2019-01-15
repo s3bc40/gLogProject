@@ -20,7 +20,8 @@ def process(request):
             fs = FileSystemStorage()
             fs.save(uploaded_file.name,uploaded_file)
             Process.process(fs.path(uploaded_file.name))
-            return HttpResponse('<h1>Success file</h1>')
+            fs.delete(uploaded_file.name)
+            return HttpResponse('<h1>Success file</h1><h2> Deleted : {}'.format(uploaded_file.name))
 
     # if a GET (or any other method) we'll create a blank form
     else:
