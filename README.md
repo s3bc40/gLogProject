@@ -1,6 +1,10 @@
 # Github for Glog project M2 Bioinfo Bordeaux
 
 ## First steps using the app :
+- If you don't have python3 :
+```bash
+sudo apt-get install python3
+```
 
 - Install Django :
 
@@ -8,7 +12,7 @@
 pip3 install Django==2.1.5 
 ```
 
-- Install Biopython : 
+- If you use BioPython , install Biopython : 
 
 ```bash
 pip3 install biopython
@@ -23,9 +27,7 @@ git clone https://github.com/s3bc40/gLogProject.git
 To run the server :
 
 ```bash
-cd gLogProject/
-git checkout annotation
-cd Annotation/Dj-annotation
+cd server
 python3 manage.py runserver
 ```
 

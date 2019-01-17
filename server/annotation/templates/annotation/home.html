@@ -1,0 +1,136 @@
+{% extends "annotation/base.html" %}
+{% load static %}
+{% block content %}
+
+  <!-- Ajouter texte au header -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <img src="{% static 'annotation/src/harvi.png' %}" alt="Harvi the mascotte !" class="responsive">
+    <!--<div class="w3-display-left w3-text-dark" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Projet de génie logiciel</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
+      <span class="w3-large">Recense des outils d'annotations etc</span>
+      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"></a></p>
+    </div> 
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>-->
+  </header>
+
+  <!-- A propos -->
+  <div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">A propos</h3>
+    <p class="w3-center w3-large">Outils de Génie logiciel recensant des sections concernant:</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Annotation de génome</p>
+        <p></p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">La visualisation d'intéractions géniques</p>
+        <p></p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">La visualisation de protéines 3D</p>
+        <p></p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">La reconstruction de réseaux métaboliques</p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Equipe -->
+  <div class="w3-container w3-row w3-center w3-light-grey w3-padding-128 ">
+    <h3 class="w3-center">Equipe</h3>
+    <p class="w3-center w3-large">Membres de la partie annotation</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h3>Benoit Bothorel</h3>
+            <p class="w3-opacity">ETUDIANT</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h3>Ludwig Duval</h3>
+            <p class="w3-opacity">ETUDIANT</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h3>Sébastien Goncalves Claro</h3>
+            <p class="w3-opacity">ETUDIANT</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <div class="w3-container">
+            <h3>Guillaume Sotton</h3>
+            <p class="w3-opacity">ETUDIANT</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Partie Annotation -->
+  <div class="w3-container  w3-dark-grey" style="padding:128px 16px" id="annotation">
+    <h3 class="w3-center">Annotation du génome de la souris</h3>
+    <!-- TO DO-->
+  </div>
+
+  <!-- Autres outils -->
+  <div class="w3-container w3-center w3-light-grey" style="padding:128px 16px" id="pricing">
+    <h3>Autres sections</h3>
+    </div>
+  </div>
+
+  <!-- Section de contact -->
+  <div class="w3-container w3-dark-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">En cas de problème. Envoyez nous un message:</p>
+    <div style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bordeaux, FR</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: guillaume.sotton@etu.u-bordeaux.fr</p>
+      <br>
+      <form action="mailto:guillaume.sotton@etu.u-bordeaux.fr" method="post" enctype="text/plain">
+        <p><input class="w3-input w3-border" type="text" placeholder="Nom" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Sujet" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> Envoyer un message
+          </button>
+        </p>
+      </form>
+      <!-- Logo de l'université -->
+      <img src="logo.jpg" class="w3-image w3-greyscale" style="width:80%;margin-top:48px;align-content: center">
+    </div>
+  </div>
+
+  <!-- Bas de page -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Menu</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Effectué via <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+{% endblock content %}
