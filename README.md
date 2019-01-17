@@ -32,3 +32,12 @@ python3 manage.py runserver
 ```
 
 You should be able to see the webApp at the adress : http://127.0.0.1:8000/
+
+> NOTE : create a branch for your work ! Don't make changes in the master django server.
+
+If you want to update the django server version in the master, from your branch :
+
+```bash
+git checkout master
+git checkout YOUR_BRANCH -- server
+```
