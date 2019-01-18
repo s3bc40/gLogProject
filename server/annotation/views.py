@@ -13,13 +13,22 @@ def process(request):
     if request.method == 'POST':
         file_form = FileForm(request.POST, request.FILES)
         text_form = TextForm(request.POST)
+
+        ## Check validity of forms
         if (text_form.is_valid()):
             return HttpResponse('<h1>Success text</h1>')
         if (file_form.is_valid()):
             uploaded_file = request.FILES['fasta_file']
+            
+            ## Save file in media root of server
             fs = FileSystemStorage()
             fs.save(uploaded_file.name,uploaded_file)
-            Process.process(fs.path(uploaded_file.name))
+
+            ## Annotation process
+            Process.processBlastx(fs.path(uploaded_file.name),uploaded_file.name)
+            Process.parseBlast_XML(uploaded_file.name)
+
+            ## WIP : delete files unused after process
             fs.delete(uploaded_file.name)
             return HttpResponse('<h1>Success file</h1><h2> Deleted : {}'.format(uploaded_file.name))
 

@@ -1,5 +1,7 @@
 # coding: utf-8
 
+# DOC BLAST+ : https://www.ncbi.nlm.nih.gov/books/NBK279684/
+
 # --------------------------
 #       Authors
 # G.CLARO Sébastien
@@ -15,20 +17,45 @@ from . import Fasta as fasta
 
 
 from Bio import SeqIO
-#from Bio.Blast import NCBIWWW
 from Bio.Blast.Applications import NcbiblastxCommandline
+from Bio.Blast import NCBIXML, Record
 import time
 
-def process(filename):   
+def processBlastx(filepath,filename):   
     obj = fasta.multFasta()
-    obj.readFasta(filename) # fasta file path
+    obj.readFasta(filepath) # fasta file path
     fastaRec = obj.fasta #get list of SeqRecord objects
 
 # Blastx : annot fonc  
     timer=time.time()
     print("# Lancement Blast #\n")
-    blastx_cline = NcbiblastxCommandline(query=filename, db="media/blastdb/protMM/chrom1MM",evalue=1e-20,  outfmt=5, out="media/my_blast.xml")
+    blastx_cline = NcbiblastxCommandline(query=filepath, db="media/blastdb/protMM/chrom1MM",evalue=1e-10 ,outfmt=5, out="media/my_blast.xml")
     stdout, stderr = blastx_cline()
     print(time.time()-timer, "s")
+
+def parseBlast_XML(filename):
+    with open("media/my_blast.xml") as result_handle:
+        blastRecords = NCBIXML.parse(result_handle)
+        for blastRecord in blastRecords:
+            for alignment in blastRecord.alignments:
+                for hsp in alignment.hsps:
+                    print("\n=======================")
+                    print("****Alignment****")
+                    print("sequence:", alignment.title)
+                    print("length:", alignment.length)
+                    print("Score:", hsp.score)
+                    print("e value:", hsp.expect)
+                    print("identity:", hsp.identities)
+                    print("len align:", hsp.align_length)
+                    print("gaps:", hsp.gaps)
+                    print("start query:", hsp.query_start)
+                    print("end query:", hsp.query_end)
+                    print("start sbjct:", hsp.sbjct_start)
+                    print("end sbjct:", hsp.sbjct_end)
+                    print(hsp.query[0:75] + "...")
+                    print(hsp.match[0:75] + "...")
+                    print(hsp.sbjct[0:75] + "...")
+
+        
 
 # http://www.geneontology.org/page/go-annotation-file-formats
