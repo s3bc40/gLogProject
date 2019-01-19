@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.core.files.storage import FileSystemStorage
 
 from .forms import TextForm, FileForm
-from .scripts import Process #add write quand y'aura le fichier dans les scripts
+from .scripts import Process 
 
 # Create your views here.
 def home(request):

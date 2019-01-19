@@ -20,12 +20,13 @@ from Bio import SeqIO
 from Bio.Blast.Applications import NcbiblastxCommandline
 from Bio.Blast import NCBIXML, Record
 import time
+import json
 
 def processBlastx(filepath,filename):   
     obj = fasta.multFasta()
     obj.readFasta(filepath) # fasta file path
     fastaRec = obj.fasta #get list of SeqRecord objects
-
+    writeJsonSeq(fastaRec)
 # Blastx : annot fonc  
     timer=time.time()
     print("# Lancement Blast #\n")
@@ -55,6 +56,19 @@ def parseBlast_XML(filename):
                     print(hsp.query[0:75] + "...")
                     print(hsp.match[0:75] + "...")
                     print(hsp.sbjct[0:75] + "...")
+
+def writeJsonSeq(listSeqRecord):
+    jsonData={}
+    jsonData["seqRecords"] = []
+    for record in listSeqRecord:
+        dico = {}
+        dico['id'] = record.id
+        dico['seq'] = str(record.seq)
+        dico['description'] = record.description
+        dico['annotations'] = record.annotations
+        jsonData["seqRecords"].append(dico)
+    with open('media/sequence.json','w') as file:
+        json.dump(jsonData,file)
 
         
 
