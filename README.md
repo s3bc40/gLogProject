@@ -18,6 +18,12 @@ pip3 install Django==2.1.5
 pip3 install biopython
 ```
 
+- Install ncbi-blast+ in order to launch local blast:
+
+```bash
+sudo apt install ncbi-blast+
+```
+
 Then clone the project with this command :
 
 ```bash
