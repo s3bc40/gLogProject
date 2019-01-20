@@ -55,7 +55,8 @@ def parseBlast_XML(filename):
                     print("end sbjct:", hsp.sbjct_end)
                     print(hsp.query[0:75] + "...")
                     print(hsp.match[0:75] + "...")
-                    print(hsp.sbjct[0:75] + "...")
+                    print(hsp   .sbjct[0:75] + "...")
+
 
 def writeJsonSeq(listSeqRecord):
     jsonData={}
