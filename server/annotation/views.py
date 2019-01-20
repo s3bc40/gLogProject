@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.http import HttpResponseRedirect
 from django.core.files.storage import FileSystemStorage
 
+from django import forms
 from .forms import TextForm, FileForm
 from .scripts import Process 
 
