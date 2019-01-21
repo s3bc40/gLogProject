@@ -14,7 +14,7 @@ def process(request):
     if request.method == 'POST':
         file_form = FileForm(request.POST, request.FILES)
         text_form = TextForm(request.POST)
-        blast_results = RadioSelect(request.POST)
+        radio_form = RadioSelect(request.POST)
 
         ## Check validity of forms
         if (text_form.is_valid()):
@@ -39,4 +39,5 @@ def process(request):
     else:
         text_form = TextForm()
         file_form = FileForm()
-    return render(request,'annotation/process.html',{'file_form':file_form,"text_form":text_form})
+        radio_form = RadioSelect()
+    return render(request,'annotation/process.html',{'file_form':file_form,"text_form":text_form,"radio_form":radio_form})
