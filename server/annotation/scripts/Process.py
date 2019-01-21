@@ -41,7 +41,7 @@ def parseBlast_XML(filename):
         for blastRecord in blastRecords:
             for alignment in blastRecord.alignments:
                 for hsp in alignment.hsps:
-                    print("\n=======================")
+                    print("<br>=======================")
                     print("****Alignment****")
                     print("sequence:", alignment.title)
                     print("length:", alignment.length)
@@ -63,10 +63,10 @@ def parseBlast_XML(filename):
                     "start_sbjct":hsp.sbjct_start,"end_sbjct":hsp.sbjct_end,"query_seq":hsp.query[0:75],
                     "query_match":hsp.match[0:75],"result_seq":hsp.sbjct[0:75]}
                     blast_results.append(infos)
-    writeBestHit(blast_results)
+    writeAnnot(blast_results)
 
 
-def writeBestHit(blast_results):
+def writeAnnot(blast_results):
     max_score=0
     max_evalue=0
     index=0
@@ -97,6 +97,13 @@ def writeJsonSeq(listSeqRecord):
     with open('media/sequence.json','w') as file:
         json.dump(jsonData,file,indent=4, sort_keys=True,ensure_ascii=False)
 
-        
-
+def getResults():
+    with open("media/my_blast.xml") as result_handle:
+        result=""
+        blastRecords = NCBIXML.parse(result_handle)
+        for blastRecord in blastRecords:
+                for alignment in blastRecord.alignments:
+                    for hsp in alignment.hsps:
+                        result+="Sequence: "+alignment.title+"<br>"+"Length: "+str(alignment.length)+"<br>"+"Score: "+str(hsp.score)+"<br>"+"E value: "+str(hsp.expect)+"<br>"+"Identity: "+str(hsp.identities)+"<br>"+"Len align: "+str(hsp.align_length)+"<br>"+"Gaps: "+str(hsp.gaps)+"<br>"+"Start query: "+str(hsp.query_start)+"<br>"+"End query: "+str(hsp.query_end)+"<br>"+"Start sbjct: "+str(hsp.sbjct_start)+"<br>"+"End sbjct: "+str(hsp.sbjct_end)+"<br>Alignemnent preview:<br>"+hsp.query[0:75]+"<br>"+hsp.match[0:75]+"<br>"+hsp.sbjct[0:75]+"<br><br>"
+    return result
 # http://www.geneontology.org/page/go-annotation-file-formats

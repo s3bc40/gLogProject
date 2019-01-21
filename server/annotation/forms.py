@@ -5,3 +5,6 @@ class TextForm(forms.Form):
 
 class FileForm(forms.Form):
     fasta_file = forms.FileField()
+
+class RadioSelect(forms.Form):
+    choices = forms.RadioSelect()

@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.core.files.storage import FileSystemStorage
 
 from django import forms
-from .forms import TextForm, FileForm
+from .forms import TextForm, FileForm, RadioSelect
 from .scripts import Process 
 
 # Create your views here.
@@ -14,6 +14,7 @@ def process(request):
     if request.method == 'POST':
         file_form = FileForm(request.POST, request.FILES)
         text_form = TextForm(request.POST)
+        blast_results = RadioSelect(request.POST)
 
         ## Check validity of forms
         if (text_form.is_valid()):
@@ -31,7 +32,8 @@ def process(request):
 
             ## WIP : delete files unused after process
             fs.delete(uploaded_file.name)
-            return HttpResponse('<h1>Success file</h1><h2> Deleted : {}'.format(uploaded_file.name))
+            blast_results=Process.getResults()
+            return HttpResponse('<h1>Success file</h1><h2> Deleted : {}<h3>Blast results :<h4> {}'.format(uploaded_file.name,blast_results))
 
     # if a GET (or any other method) we'll create a blank form
     else:
