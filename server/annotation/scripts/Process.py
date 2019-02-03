@@ -15,14 +15,13 @@
 # --------------------------
 from . import Fasta as fasta
 
-
 from Bio import SeqIO
 from Bio.Blast.Applications import NcbiblastxCommandline
 from Bio.Blast import NCBIXML, Record
 import time
 import json
 
-def processBlastx(filepath,filename):   
+def processBlastx(filepath):   
     obj = fasta.multFasta()
     obj.readFasta(filepath) # fasta file path
     fastaRec = obj.fasta #get list of SeqRecord objects
@@ -34,7 +33,7 @@ def processBlastx(filepath,filename):
     stdout, stderr = blastx_cline()
     print(time.time()-timer, "s")
 
-def parseBlast_XML(filename):
+def parseBlast_XML():
     blast_results = []
     with open("media/my_blast.xml") as result_handle:
         blastRecords = NCBIXML.parse(result_handle)
@@ -65,6 +64,13 @@ def parseBlast_XML(filename):
                     blast_results.append(infos)
     writeAnnot(blast_results)
 
+def writeFasta(text):
+    with open("media/myQuery.fasta","w") as file:
+        print(text)
+        text = text.split('\n')
+        for line in text:
+            file.write(line)  
+    return 'media/myQuery.fasta'      
 
 def writeAnnot(blast_results):
     max_score=0
