@@ -5,7 +5,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home, name='annot-home'),
-    path('annotation/',views.process, name='annot-process')
+    path('annotation/',views.process, name='annot-process'),
+    path('visualisation/', views.masonVisu, name='annot-visu')
 ]
 
 if settings.DEBUG:

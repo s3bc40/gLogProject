@@ -40,22 +40,6 @@ def parseBlast_XML():
         for blastRecord in blastRecords:
             for alignment in blastRecord.alignments:
                 for hsp in alignment.hsps:
-                    print("<br>=======================")
-                    print("****Alignment****")
-                    print("sequence:", alignment.title)
-                    print("length:", alignment.length)
-                    print("Score:", hsp.score)
-                    print("e value:", hsp.expect)
-                    print("identity:", hsp.identities)
-                    print("len align:", hsp.align_length)
-                    print("gaps:", hsp.gaps)
-                    print("start query:", hsp.query_start)
-                    print("end query:", hsp.query_end)
-                    print("start sbjct:", hsp.sbjct_start)
-                    print("end sbjct:", hsp.sbjct_end)
-                    print(hsp.query[0:75] + "...")
-                    print(hsp.match[0:75] + "...")
-                    print(hsp.sbjct[0:75] + "...")
                     infos={"description":alignment.title,"length":alignment.length,"score":hsp.score,
                     "e_value":hsp.expect,"identity":hsp.identities,"len_align":hsp.align_length,
                     "gaps":hsp.gaps,"start_query":hsp.query_start,"end_query":hsp.query_end,
@@ -63,6 +47,7 @@ def parseBlast_XML():
                     "query_match":hsp.match[0:75],"result_seq":hsp.sbjct[0:75]}
                     blast_results.append(infos)
     writeAnnot(blast_results)
+    return blast_results
 
 def writeFasta(text):
     with open("media/myQuery.fasta","w") as file:
@@ -103,13 +88,15 @@ def writeJsonSeq(listSeqRecord):
     with open('media/sequence.json','w') as file:
         json.dump(jsonData,file,indent=4, sort_keys=True,ensure_ascii=False)
 
-def getResults():
-    with open("media/my_blast.xml") as result_handle:
-        result=""
-        blastRecords = NCBIXML.parse(result_handle)
-        for blastRecord in blastRecords:
-                for alignment in blastRecord.alignments:
-                    for hsp in alignment.hsps:
-                        result+="Sequence: "+alignment.title+"<br>"+"Length: "+str(alignment.length)+"<br>"+"Score: "+str(hsp.score)+"<br>"+"E value: "+str(hsp.expect)+"<br>"+"Identity: "+str(hsp.identities)+"<br>"+"Len align: "+str(hsp.align_length)+"<br>"+"Gaps: "+str(hsp.gaps)+"<br>"+"Start query: "+str(hsp.query_start)+"<br>"+"End query: "+str(hsp.query_end)+"<br>"+"Start sbjct: "+str(hsp.sbjct_start)+"<br>"+"End sbjct: "+str(hsp.sbjct_end)+"<br>Alignemnent preview:<br>"+hsp.query[0:75]+"<br>"+hsp.match[0:75]+"<br>"+hsp.sbjct[0:75]+"<br><br>"
-    return result
+# def getResults():
+#     with open("media/my_blast.xml") as result_handle:
+#         blastRecords = NCBIXML.parse(result_handle)
+#         return blastRecords
+#         for blastRecord in blastRecords:
+#                 for alignment in blastRecord.alignments:
+#                     for hsp in alignment.hsps:
+#                         result+="Sequence: "+alignment.title+"<br>"+"Length: "+str(alignment.length)+"<br>"+"Score: "+str(hsp.score)+"<br>"+"E value: "+str(hsp.expect)+"<br>"+"Identity: "+str(hsp.identities)+"<br>"+"Len align: "+str(hsp.align_length)+"<br>"+"Gaps: "+str(hsp.gaps)+"<br>"+"Start query: "+str(hsp.query_start)+"<br>"+"End query: "+str(hsp.query_end)+"<br>"+"Start sbjct: "+str(hsp.sbjct_start)+"<br>"+"End sbjct: "+str(hsp.sbjct_end)+"<br>Alignemnent preview:<br>"+hsp.query[0:75]+"<br>"+hsp.match[0:75]+"<br>"+hsp.sbjct[0:75]+"<br><br>"
+#     return result
+
+
 # http://www.geneontology.org/page/go-annotation-file-formats
