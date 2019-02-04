@@ -62,18 +62,17 @@ def writeAnnot(blast_results):
     max_evalue=0
     index=0
     for i in range(len(blast_results)):
-        if blast_results[i]["score"] > max_score and blast_results[i]["e_value"] < max_evalue:
+        if blast_results[i]["score"] > max_score and blast_results[i]["e_value"] > max_evalue:
             max_score=blast_results[i]["score"]
             max_evalue=blast_results[i]["e_value"]
             index=i
-
-    with open('media/sequence.json','r') as f:
-        data = json.load(f)
-        data["seqRecords"][0]["annotations"]=blast_results[index]
-    with open('media/sequence.json',"w") as file:
-        json.dump(data,file,indent=4, sort_keys=True,ensure_ascii=False)
-
-
+          
+    for j in range(len(blast_results)-1):
+        with open('media/sequence.json','r') as f:
+            data = json.load(f)
+            data["seqRecords"][j]["annotations"]=blast_results[j]
+        with open('media/sequence.json',"w") as file:
+            json.dump(data,file,indent=4,sort_keys=True,ensure_ascii=False)
 
 def writeJsonSeq(listSeqRecord):
     jsonData={}
