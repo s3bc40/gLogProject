@@ -41,3 +41,4 @@ If you want to update the django server version in the master, from your branch 
 git checkout master
 git checkout YOUR_BRANCH -- server
 ```
+## The source code is in the server repository 
