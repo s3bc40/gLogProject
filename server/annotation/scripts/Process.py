@@ -82,7 +82,10 @@ def writeJsonSeq(listSeqRecord):
         dico['id'] = record.id
         dico['seq'] = str(record.seq)
         dico['description'] = record.description
-        dico['annotations'] = [] #record.annotations
+        if len(record.annotations) > 0:
+            dico['annotations'] = [record.annotations]
+        else:
+            dico['annotations'] = []
         jsonData["seqRecords"].append(dico)
     with open('media/sequence.json','w') as file:
         json.dump(jsonData,file,indent=4, sort_keys=True,ensure_ascii=False)
