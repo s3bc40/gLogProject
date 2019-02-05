@@ -20,6 +20,29 @@ from Bio.Blast.Applications import NcbiblastxCommandline
 from Bio.Blast import NCBIXML, Record
 import time
 import json
+import urllib.request
+import shutil
+import subprocess
+
+def writeJsonSeq(listSeqRecord):
+    jsonData={}
+    jsonData["seqRecords"] = []
+    for record in listSeqRecord:
+        dico = {}
+        dico['id'] = record.id
+        dico['seq'] = str(record.seq)
+        dico['description'] = record.description
+        dico['annotations'] = []
+        jsonData["seqRecords"].append(dico)
+    with open('media/annotation/sequence.json','w') as file:
+        json.dump(jsonData,file,indent=4, sort_keys=True,ensure_ascii=False)
+
+def updateDB():
+    pathDB = "media/annotation/blastdb/protMM/chrom1MM.fasta"
+    urlChrom1 = "https://www.uniprot.org/uniprot/?query=proteomecomponent:%22chromosome%201%22&format=fasta&fil=reviewed:yes%20AND%20organism:%22Mus%20musculus%20(Mouse)%20[10090]%22%20AND%20proteome:up000000589"
+    with urllib.request.urlopen(urlChrom1) as response, open(pathDB, 'wb') as out_file:
+        shutil.copyfileobj(response, out_file)
+    subprocess.call('makeblastdb -in media/annotation/blastdb/protMM/chrom1MM.fasta -dbtype prot -out chrom1MM', shell=True)
 
 def processBlastx(filepath):   
     obj = fasta.multFasta()
@@ -27,17 +50,20 @@ def processBlastx(filepath):
     fastaRec = obj.fasta #get list of SeqRecord objects
     writeJsonSeq(fastaRec)
 # Blastx : annot fonc  
-    timer=time.time()
-    print("# Lancement Blast #\n")
-    blastx_cline = NcbiblastxCommandline(query=filepath, db="media/blastdb/protMM/chrom1MM",evalue=1e-10 ,outfmt=5, out="media/my_blast.xml")
+    # Update option for db (need the chrom1 fasta)
+    updateDB()
+    # timer=time.time()
+    # print("# Lancement Blast #\n")
+    blastx_cline = NcbiblastxCommandline(query=filepath, db="media/annotation/blastdb/protMM/chrom1MM",evalue=1e-10 ,outfmt=5, out="media/annotation/my_blast.xml")
     stdout, stderr = blastx_cline()
-    print(time.time()-timer, "s")
+    # print(time.time()-timer, "s")
 
 def parseBlast_XML():
     blast_results = []
-    with open("media/my_blast.xml") as result_handle:
+    with open("media/annotation/my_blast.xml") as result_handle:
         blastRecords = NCBIXML.parse(result_handle)
         for blastRecord in blastRecords:
+            records = []
             for alignment in blastRecord.alignments:
                 for hsp in alignment.hsps:
                     infos={"description":alignment.title,"length":alignment.length,"score":hsp.score,
@@ -45,12 +71,13 @@ def parseBlast_XML():
                     "gaps":hsp.gaps,"start_query":hsp.query_start,"end_query":hsp.query_end,
                     "start_sbjct":hsp.sbjct_start,"end_sbjct":hsp.sbjct_end,"query_seq":hsp.query[0:75],
                     "query_match":hsp.match[0:75],"result_seq":hsp.sbjct[0:75]}
-                    blast_results.append(infos)
+                    records.append(infos)
+            blast_results.append(records)
     writeAnnot(blast_results)
     return blast_results
 
 def writeFasta(text):
-    with open("media/myQuery.fasta","w") as file:
+    with open("media/annotation/myQuery.fasta","w") as file:
         print(text)
         text = text.split('\n')
         for line in text:
@@ -67,28 +94,13 @@ def writeAnnot(blast_results):
     #         max_evalue=blast_results[i]["e_value"]
     #         index=i
           
-    for j in range(len(blast_results)):
-        with open('media/sequence.json','r') as f:
-            data = json.load(f)
-            data["seqRecords"][0]["annotations"].append(blast_results[j])
-        with open('media/sequence.json',"w") as file:
-            json.dump(data,file,indent=4,sort_keys=True,ensure_ascii=False)
-
-def writeJsonSeq(listSeqRecord):
-    jsonData={}
-    jsonData["seqRecords"] = []
-    for record in listSeqRecord:
-        dico = {}
-        dico['id'] = record.id
-        dico['seq'] = str(record.seq)
-        dico['description'] = record.description
-        if len(record.annotations) > 0:
-            dico['annotations'] = [record.annotations]
-        else:
-            dico['annotations'] = []
-        jsonData["seqRecords"].append(dico)
-    with open('media/sequence.json','w') as file:
-        json.dump(jsonData,file,indent=4, sort_keys=True,ensure_ascii=False)
+    with open('media/annotation/sequence.json','r') as f:
+        data = json.load(f)
+        for j in range(len(blast_results)):
+            for info in blast_results[j]:
+                data["seqRecords"][j]["annotations"].append(info)
+    with open('media/annotation/sequence.json',"w") as file:
+        json.dump(data,file,indent=4,sort_keys=True,ensure_ascii=False)
 
 # def getResults():
 #     with open("media/my_blast.xml") as result_handle:
