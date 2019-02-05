@@ -39,10 +39,10 @@ def writeJsonSeq(listSeqRecord):
 
 def updateDB():
     pathDB = "media/annotation/blastdb/protMM/chrom1MM.fasta"
-    urlChrom1 = "https://www.uniprot.org/uniprot/?query=proteomecomponent:%22chromosome%201%22&format=fasta&fil=reviewed:yes%20AND%20organism:%22Mus%20musculus%20(Mouse)%20[10090]%22%20AND%20proteome:up000000589"
+    urlChrom1 = "https://www.uniprot.org/uniprot/?query=proteome:UP000000589%20AND%20proteomecomponent:%22Chromosome%201%22&format=fasta"
     with urllib.request.urlopen(urlChrom1) as response, open(pathDB, 'wb') as out_file:
         shutil.copyfileobj(response, out_file)
-    subprocess.call('makeblastdb -in media/annotation/blastdb/protMM/chrom1MM.fasta -dbtype prot -out chrom1MM', shell=True)
+    subprocess.call('makeblastdb -in media/annotation/blastdb/protMM/chrom1MM.fasta -dbtype prot -out media/annotation/blastdb/protMM/chrom1MM', shell=True)
 
 def processBlastx(filepath):   
     obj = fasta.multFasta()

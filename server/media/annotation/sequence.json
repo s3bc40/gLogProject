@@ -9,8 +9,8 @@
         {
             "annotations": [
                 {
-                    "description": "gnl|BL_ORD_ID|2833 sp|P41251|NRAM1_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=2",
-                    "e_value": 2.53222e-48,
+                    "description": "gnl|BL_ORD_ID|65 sp|P41251|NRAM1_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=2",
+                    "e_value": 2.53216e-48,
                     "end_query": 2827,
                     "end_sbjct": 515,
                     "gaps": 0,
@@ -25,8 +25,8 @@
                     "start_sbjct": 437
                 },
                 {
-                    "description": "gnl|BL_ORD_ID|2833 sp|P41251|NRAM1_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=2",
-                    "e_value": 2.53222e-48,
+                    "description": "gnl|BL_ORD_ID|65 sp|P41251|NRAM1_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=2",
+                    "e_value": 2.53216e-48,
                     "end_query": 2585,
                     "end_sbjct": 547,
                     "gaps": 0,
@@ -41,8 +41,8 @@
                     "start_sbjct": 518
                 },
                 {
-                    "description": "gnl|BL_ORD_ID|540 tr|A0A087WNR0|A0A087WNR0_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=1",
-                    "e_value": 2.96572e-48,
+                    "description": "gnl|BL_ORD_ID|1306 tr|A0A087WNR0|A0A087WNR0_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=1",
+                    "e_value": 2.96565e-48,
                     "end_query": 2827,
                     "end_sbjct": 474,
                     "gaps": 0,
@@ -57,8 +57,8 @@
                     "start_sbjct": 396
                 },
                 {
-                    "description": "gnl|BL_ORD_ID|540 tr|A0A087WNR0|A0A087WNR0_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=1",
-                    "e_value": 2.96572e-48,
+                    "description": "gnl|BL_ORD_ID|1306 tr|A0A087WNR0|A0A087WNR0_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=1",
+                    "e_value": 2.96565e-48,
                     "end_query": 2585,
                     "end_sbjct": 506,
                     "gaps": 0,
@@ -92,8 +92,8 @@
         {
             "annotations": [
                 {
-                    "description": "gnl|BL_ORD_ID|2201 tr|E9PVR6|E9PVR6_MOUSE Vomeronasal type-1 receptor OS=Mus musculus OX=10090 GN=Vmn1r1 PE=3 SV=1",
-                    "e_value": 7.99824e-28,
+                    "description": "gnl|BL_ORD_ID|2329 tr|E9PVR6|E9PVR6_MOUSE Vomeronasal type-1 receptor OS=Mus musculus OX=10090 GN=Vmn1r1 PE=3 SV=1",
+                    "e_value": 7.99922e-28,
                     "end_query": 1034,
                     "end_sbjct": 306,
                     "gaps": 7,
@@ -115,8 +115,8 @@
         {
             "annotations": [
                 {
-                    "description": "gnl|BL_ORD_ID|2989 sp|P41047|TNFL6_MOUSE Tumor necrosis factor ligand superfamily member 6 OS=Mus musculus OX=10090 GN=Faslg PE=1 SV=1",
-                    "e_value": 9.99937e-86,
+                    "description": "gnl|BL_ORD_ID|357 sp|P41047|TNFL6_MOUSE Tumor necrosis factor ligand superfamily member 6 OS=Mus musculus OX=10090 GN=Faslg PE=1 SV=1",
+                    "e_value": 1.00006e-85,
                     "end_query": 6917,
                     "end_sbjct": 279,
                     "gaps": 0,
@@ -131,8 +131,8 @@
                     "start_sbjct": 147
                 },
                 {
-                    "description": "gnl|BL_ORD_ID|2989 sp|P41047|TNFL6_MOUSE Tumor necrosis factor ligand superfamily member 6 OS=Mus musculus OX=10090 GN=Faslg PE=1 SV=1",
-                    "e_value": 8.93015e-52,
+                    "description": "gnl|BL_ORD_ID|357 sp|P41047|TNFL6_MOUSE Tumor necrosis factor ligand superfamily member 6 OS=Mus musculus OX=10090 GN=Faslg PE=1 SV=1",
+                    "e_value": 8.93125e-52,
                     "end_query": 558,
                     "end_sbjct": 116,
                     "gaps": 0,
