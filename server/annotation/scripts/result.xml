@@ -1,0 +1,1037 @@
+BLASTX 2.6.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: chrom1MM.fasta
+           3,154 sequences; 1,399,400 total letters
+
+
+
+Query= NM_007698.3 Mus musculus cholinergic receptor, muscarinic 1, CNS
+(Chrm1), transcript variant 2, mRNA
+
+Length=6209
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|Q02152|5HT2B_MOUSE 5-hydroxytryptamine receptor 2B OS=Mus mu...  85.9    9e-18
+  tr|G3X9C6|G3X9C6_MOUSE 5-hydroxytryptamine (Serotonin) receptor...  83.2    3e-17
+  tr|G3UVT8|G3UVT8_MOUSE 5-hydroxytryptamine (Serotonin) receptor...  78.2    5e-17
+  tr|A0A087WRW7|A0A087WRW7_MOUSE Adenosine receptor A1 (Fragment)...  71.2    1e-14
+  sp|Q60612|AA1R_MOUSE Adenosine receptor A1 OS=Mus musculus OX=1...  70.9    2e-13
+  tr|A0A140T8Q9|A0A140T8Q9_MOUSE G-protein-coupled receptor 161 O...  68.6    3e-12
+  sp|B2RPY5|GP161_MOUSE G-protein coupled receptor 161 OS=Mus mus...  68.2    4e-12
+  sp|P33534|OPRK_MOUSE Kappa-type opioid receptor OS=Mus musculus...  67.0    5e-12
+  sp|Q9EQQ4|GPR45_MOUSE Probable G-protein coupled receptor 45 OS...  63.2    8e-11
+  tr|A0A0B4J1E4|A0A0B4J1E4_MOUSE G-protein-coupled receptor 39 OS...  53.1    1e-07
+  sp|Q9WU02|V1BR_MOUSE Vasopressin V1b receptor OS=Mus musculus O...  52.4    3e-07
+  sp|O55040|NMUR1_MOUSE Neuromedin-U receptor 1 OS=Mus musculus O...  51.2    5e-07
+  tr|A0A1C7ZMY0|A0A1C7ZMY0_MOUSE Neuromedin-U receptor 1 OS=Mus m...  51.2    6e-07
+  sp|P49681|NPBW1_MOUSE Neuropeptides B/W receptor type 1 OS=Mus ...  50.8    6e-07
+  tr|A0A1D5RLB6|A0A1D5RLB6_MOUSE Neuromedin-U receptor 1 OS=Mus m...  49.7    1e-06
+  tr|Q7TRV9|Q7TRV9_MOUSE Olfactory receptor OS=Mus musculus OX=10...  42.7    2e-04
+  sp|P35343|CXCR2_MOUSE C-X-C chemokine receptor type 2 OS=Mus mu...  42.7    2e-04
+  tr|E9Q2D4|E9Q2D4_MOUSE C-X-C chemokine receptor type 4 (Fragmen...  42.4    2e-04
+  tr|A0A0R4J0N8|A0A0R4J0N8_MOUSE C-X-C chemokine receptor type 4 ...  42.7    2e-04
+  tr|E9Q8M2|E9Q8M2_MOUSE Olfactory receptor OS=Mus musculus OX=10...  42.0    3e-04
+  sp|Q8K087|GPR1_MOUSE G-protein coupled receptor 1 OS=Mus muscul...  41.2    7e-04
+  sp|Q9ES90|GPR35_MOUSE G-protein coupled receptor 35 OS=Mus musc...  39.3    0.003
+  tr|E9Q0Q2|E9Q0Q2_MOUSE Olfactory receptor OS=Mus musculus OX=10...  37.0    0.013
+  sp|Q99JG2|G37L1_MOUSE G-protein coupled receptor 37-like 1 OS=M...  35.8    0.035
+  tr|E9Q4G0|E9Q4G0_MOUSE Olfactory receptor OS=Mus musculus OX=10...  35.0    0.048
+  sp|P0C5I1|GPR25_MOUSE Probable G-protein coupled receptor 25 OS...  35.4    0.049
+  sp|Q810W6|CXCR1_MOUSE C-X-C chemokine receptor type 1 OS=Mus mu...  34.3    0.093
+  tr|A0A087WPI1|A0A087WPI1_MOUSE G-protein-coupled receptor 35 (F...  32.7    0.12 
+  sp|P56485|ACKR3_MOUSE Atypical chemokine receptor 3 OS=Mus musc...  32.7    0.26 
+  sp|Q3UJF0|GPR55_MOUSE G-protein coupled receptor 55 OS=Mus musc...  32.3    0.34 
+  tr|Q8VET3|Q8VET3_MOUSE Olfactory receptor OS=Mus musculus OX=10...  32.0    0.48 
+  sp|Q9WUK7|OPN3_MOUSE Opsin-3 OS=Mus musculus OX=10090 GN=Opn3 P...  28.9    4.5  
+  tr|E9Q050|E9Q050_MOUSE Olfactory receptor OS=Mus musculus OX=10...  28.5    6.3  
+  sp|Q0VBN2|DSEL_MOUSE Dermatan-sulfate epimerase-like protein OS...  28.5    7.1  
+  tr|Q8VFC5|Q8VFC5_MOUSE Olfactory receptor OS=Mus musculus OX=10...  28.1    8.5  
+  tr|E9PYK6|E9PYK6_MOUSE Olfactory receptor OS=Mus musculus OX=10...  28.1    8.5  
+  tr|E9PZE9|E9PZE9_MOUSE SPATS2-like protein OS=Mus musculus OX=1...  28.1    9.8  
+
+
+> sp|Q02152|5HT2B_MOUSE 5-hydroxytryptamine receptor 2B OS=Mus 
+musculus OX=10090 GN=Htr2b PE=1 SV=3
+Length=479
+
+ Score = 85.9 bits (211),  Expect = 9e-18, Method: Compositional matrix adjust.
+ Identities = 57/186 (31%), Positives = 95/186 (51%), Gaps = 6/186 (3%)
+ Frame = +3
+
+Query  633   LATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNL-YTTYLLMGHWALGT  809
+             + T+ GN+LV+++  +   L+   NYFL+SLA ADL++G F M +   T +    W L  
+Sbjct  65    IPTIGGNILVILAVALEKRLQYATNYFLMSLAIADLLVGLFVMPIALLTIMFEAIWPLPL  124
+
+Query  810   LACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFV  989
+               C  WL LD + S AS+M+L  IS DRY ++ +P+      +   A + I + WL+S  
+Sbjct  125   ALCPAWLFLDVLFSTASIMHLCAISLDRYIAIKKPIQANQCNSRATAFIKITVVWLISIG  184
+
+Query  990   LWAPAIL--FWQYLVGERTVLAGQCYIQFLSQPIITFGTAMAAFYLPVTVMCTLYWRIYR  1163
+             +  P  +      ++    V       +F S   + FG ++AAF+ P+T+M   Y+    
+Sbjct  185   IAIPVPIKGIETDVINPHNVTCELTKDRFGS--FMVFG-SLAAFFAPLTIMVVTYFLTIH  241
+
+Query  1164  ETENRA  1181
+               + +A
+Sbjct  242   TLQKKA  247
+
+
+ Score = 64.3 bits (155),  Expect = 5e-11, Method: Compositional matrix adjust.
+ Identities = 31/92 (34%), Positives = 49/92 (53%), Gaps = 3/92 (3%)
+ Frame = +3
+
+Query  1569  LAKRKTFSLVKEKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVP---ETLWELGYW  1739
+             + KR   ++  E++A++ L  +   F+L W P+ I  L    C  C     +TL E+  W
+Sbjct  307   VGKRSAQTISNEQRASKALGVVFFLFLLMWCPFFITNLTLALCDSCNQTTLKTLLEIFVW  366
+
+Query  1740  LCYVNSTVNPMCYALCNKAFRDTFRLLLLCRW  1835
+             + YV+S VNP+ Y L NK FR+ F   + C +
+Sbjct  367   IGYVSSGVNPLIYTLFNKTFREAFGRYITCNY  398
+
+
+> tr|G3X9C6|G3X9C6_MOUSE 5-hydroxytryptamine (Serotonin) receptor 
+5B OS=Mus musculus OX=10090 GN=Htr5b PE=3 SV=1
+Length=370
+
+ Score = 83.2 bits (204),  Expect = 3e-17, Method: Compositional matrix adjust.
+ Identities = 57/184 (31%), Positives = 92/184 (50%), Gaps = 8/184 (4%)
+ Frame = +3
+
+Query  636   ATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNL-YTTYLLMGH-WALGT  809
+             AT   NLLVL++         V +  + S A +D+++    M L   + L +G  W LG 
+Sbjct  65    ATFLWNLLVLVTILRVRAFHRVPHNLVASTAVSDVLVAALVMPLSLVSELSVGRRWQLGR  124
+
+Query  810   LACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAW-LVSF  986
+               C +W++ D +   AS+ N+  I+ DRY+++TR L Y  +   R +ALMI + W L + 
+Sbjct  125   SLCHVWISFDVLCCTASIWNVAAIALDRYWTITRHLQYTLRTRSRASALMIAITWALSAL  184
+
+Query  987   VLWAPAILFWQYLVGERTVLAGQCYIQFLSQPIITFGTAMAAFYLPVTVMCTLYWRIYRE  1166
+             +  AP +  W      R     +C  Q   +P     +   AFYLP+ V+  +YW+IY+ 
+Sbjct  185   IALAPLLFGWGEAYDARL---QRC--QVSQEPSYAVFSTCGAFYLPLAVVLFVYWKIYKA  239
+
+Query  1167  TENR  1178
+              + R
+Sbjct  240   AKFR  243
+
+
+ Score = 51.6 bits (122),  Expect = 4e-07, Method: Compositional matrix adjust.
+ Identities = 25/75 (33%), Positives = 39/75 (52%), Gaps = 0/75 (0%)
+ Frame = +3
+
+Query  1599  KEKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWELGYWLCYVNSTVNPMCY  1778
+             KEK+AA  +  ++  F+L W P+ +  L+S  C   +P     +  WL Y NS  NP+ Y
+Sbjct  292   KEKRAAMMVGILIGVFVLCWIPFFLTELISPLCACSLPPIWKSIFLWLGYSNSFFNPLIY  351
+
+Query  1779  ALCNKAFRDTFRLLL  1823
+                NK + + F+ L 
+Sbjct  352   TAFNKNYNNAFKSLF  366
+
+
+> tr|G3UVT8|G3UVT8_MOUSE 5-hydroxytryptamine (Serotonin) receptor 
+2B, isoform CRA_b (Fragment) OS=Mus musculus OX=10090 GN=Htr2b 
+PE=3 SV=1
+Length=173
+
+ Score = 78.2 bits (191),  Expect = 5e-17, Method: Compositional matrix adjust.
+ Identities = 42/117 (36%), Positives = 65/117 (56%), Gaps = 1/117 (1%)
+ Frame = +3
+
+Query  651  NLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNL-YTTYLLMGHWALGTLACDLW  827
+            N+LV+++  +   L+   NYFL+SLA ADL++G F M +   T +    W L    C  W
+Sbjct  1    NILVILAVALEKRLQYATNYFLMSLAIADLLVGLFVMPIALLTIMFEAIWPLPLALCPAW  60
+
+Query  828  LALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLWA  998
+            L LD + S AS+M+L  IS DRY ++ +P+      +   A + I + WL+S  +W 
+Sbjct  61   LFLDVLFSTASIMHLCAISLDRYIAIKKPIQANQCNSRATAFIKITVVWLISIGMWG  117
+
+
+> tr|A0A087WRW7|A0A087WRW7_MOUSE Adenosine receptor A1 (Fragment) 
+OS=Mus musculus OX=10090 GN=Adora1 PE=3 SV=1
+Length=178
+
+ Score = 71.2 bits (173),  Expect = 1e-14, Method: Compositional matrix adjust.
+ Identities = 53/159 (33%), Positives = 82/159 (52%), Gaps = 17/159 (11%)
+ Frame = +3
+
+Query  570   LAPGKGPWQVAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIG  749
+             + P    +Q A+IGI   L++L +V GN+LV+ + KVN  L+     F++SLA AD+ +G
+Sbjct  1     MPPYISAFQAAYIGIEV-LIALVSVPGNVLVIWAVKVNQALRDATFCFIVSLAVADVAVG  59
+
+Query  750   TFSMNLYT-------TYLLMGHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVT  908
+                + L         TY    H  L  +AC +      + + +S++ LL I+ DRY  V 
+Sbjct  60    ALVIPLAILINIGPQTYF---HTCL-MVACPV-----LILTQSSILALLAIAVDRYLRVK  110
+
+Query  909   RPLSYRAKRTPRRAALMIGLAWLVSFVLWAPAILFWQYL  1025
+              PL Y+   T RRAA+ I   W++S V+    +  W  L
+Sbjct  111   IPLRYKTVVTQRRAAVAIAGCWILSLVVGLTPMFGWNNL  149
+
+
+> sp|Q60612|AA1R_MOUSE Adenosine receptor A1 OS=Mus musculus OX=10090 
+GN=Adora1 PE=2 SV=4
+Length=326
+
+ Score = 70.9 bits (172),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 50/155 (32%), Positives = 80/155 (52%), Gaps = 9/155 (6%)
+ Frame = +3
+
+Query  570   LAPGKGPWQVAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIG  749
+             + P    +Q A+IGI   L++L +V GN+LV+ + KVN  L+     F++SLA AD+ +G
+Sbjct  1     MPPYISAFQAAYIGIEV-LIALVSVPGNVLVIWAVKVNQALRDATFCFIVSLAVADVAVG  59
+
+Query  750   TFSMNLYTTYLLMGHWALGT---LACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLS  920
+                + L     +       T   +AC +      + + +S++ LL I+ DRY  V  PL 
+Sbjct  60    ALVIPLAILINIGPQTYFHTCLMVACPV-----LILTQSSILALLAIAVDRYLRVKIPLR  114
+
+Query  921   YRAKRTPRRAALMIGLAWLVSFVLWAPAILFWQYL  1025
+             Y+   T RRAA+ I   W++S V+    +  W  L
+Sbjct  115   YKTVVTQRRAAVAIAGCWILSLVVGLTPMFGWNNL  149
+
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 34/92 (37%), Positives = 49/92 (53%), Gaps = 6/92 (7%)
+ Frame = +3
+
+Query  1599  KEKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCV-PETLWELGYWLCYVNSTVNPMC  1775
+             KE K A++L+ IL  F L+W P +I+  ++ FC  C  P  L  +  +L + NS +NP+ 
+Sbjct  228   KELKIAKSLALILFLFALSWLPLHILNCITLFCPTCQKPSILIYIAIFLTHGNSAMNPIV  287
+
+Query  1776  YALCNKAFRDTFRLLLLCRWDKRRWRKIPKRP  1871
+             YA     FR TF    L  W+   +R  PK P
+Sbjct  288   YAFRIHKFRVTF----LKIWND-HFRCQPKPP  314
+
+
+> tr|A0A140T8Q9|A0A140T8Q9_MOUSE G-protein-coupled receptor 161 
+OS=Mus musculus OX=10090 GN=Gpr161 PE=3 SV=1
+Length=528
+
+ Score = 68.6 bits (166),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 52/211 (25%), Positives = 97/211 (46%), Gaps = 4/211 (2%)
+ Frame = +3
+
+Query  558   NITVLAPGKGPWQVAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACAD  737
+             N+T    G+G     FI I   ++++    GNL+++++    + L T++N F+ SL  ++
+Sbjct  15    NLTATEGGEGGAVSEFIAII--IITVLVCLGNLVIVVTLYKKSYLLTLSNKFVFSLTLSN  72
+
+Query  738   LIIGTFSMNLYTTYLLMGHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPL  917
+              ++    +    T  +   W  G + C+    L  + S+AS++ L +I+ DRY++V  P+
+Sbjct  73    FLLSVLVLPFVVTSSIRREWIFGVVWCNFSALLYLLISSASMLTLGVIAIDRYYAVLYPM  132
+
+Query  918   SYRAKRTPRRAALMIGLAWLVSFVLWAPAILFWQYLVGERTVLAGQCYIQFLSQPIITFG  1097
+              Y  K T  RA + +   WL S +   P +  W  +  E       C   +  +P  T  
+Sbjct  133   VYPMKITGNRAVMALVYIWLHSLIGCLPPLFGWSSV--EFDEFKWMCVAAWHQEPGYTIF  190
+
+Query  1098  TAMAAFYLPVTVMCTLYWRIYRETENRAREL  1190
+               +     P  +M   Y  I+R    +AR++
+Sbjct  191   WQIWCALFPFLIMLVCYGFIFRVARVKARKV  221
+
+
+ Score = 45.4 bits (106),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 26/79 (33%), Positives = 42/79 (53%), Gaps = 3/79 (4%)
+ Frame = +3
+
+Query  1608  KAARTLSAILLAFILTWTPYNIMVLVSTF-CKDCVPETLWELGYWLCYVNSTVNPMCYAL  1784
+             KA  T+  ++ AF++TW PY +++       K+CV  TL     WL + ++  +P+ Y L
+Sbjct  266   KALITILVVIGAFMVTWGPYMVVITSEALWGKNCVSPTLETWATWLSFTSAICHPLIYGL  325
+
+Query  1785  CNKAFRDTFRLLLLCRWDK  1841
+              NK  R    LL +C  D+
+Sbjct  326   WNKTVRK--ELLGMCFGDR  342
+
+
+> sp|B2RPY5|GP161_MOUSE G-protein coupled receptor 161 OS=Mus musculus 
+OX=10090 GN=Gpr161 PE=1 SV=1
+Length=545
+
+ Score = 68.2 bits (165),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 52/211 (25%), Positives = 97/211 (46%), Gaps = 4/211 (2%)
+ Frame = +3
+
+Query  558   NITVLAPGKGPWQVAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACAD  737
+             N+T    G+G     FI I   ++++    GNL+++++    + L T++N F+ SL  ++
+Sbjct  32    NLTATEGGEGGAVSEFIAII--IITVLVCLGNLVIVVTLYKKSYLLTLSNKFVFSLTLSN  89
+
+Query  738   LIIGTFSMNLYTTYLLMGHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPL  917
+              ++    +    T  +   W  G + C+    L  + S+AS++ L +I+ DRY++V  P+
+Sbjct  90    FLLSVLVLPFVVTSSIRREWIFGVVWCNFSALLYLLISSASMLTLGVIAIDRYYAVLYPM  149
+
+Query  918   SYRAKRTPRRAALMIGLAWLVSFVLWAPAILFWQYLVGERTVLAGQCYIQFLSQPIITFG  1097
+              Y  K T  RA + +   WL S +   P +  W  +  E       C   +  +P  T  
+Sbjct  150   VYPMKITGNRAVMALVYIWLHSLIGCLPPLFGWSSV--EFDEFKWMCVAAWHQEPGYTIF  207
+
+Query  1098  TAMAAFYLPVTVMCTLYWRIYRETENRAREL  1190
+               +     P  +M   Y  I+R    +AR++
+Sbjct  208   WQIWCALFPFLIMLVCYGFIFRVARVKARKV  238
+
+
+ Score = 45.4 bits (106),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 26/79 (33%), Positives = 42/79 (53%), Gaps = 3/79 (4%)
+ Frame = +3
+
+Query  1608  KAARTLSAILLAFILTWTPYNIMVLVSTF-CKDCVPETLWELGYWLCYVNSTVNPMCYAL  1784
+             KA  T+  ++ AF++TW PY +++       K+CV  TL     WL + ++  +P+ Y L
+Sbjct  283   KALITILVVIGAFMVTWGPYMVVITSEALWGKNCVSPTLETWATWLSFTSAICHPLIYGL  342
+
+Query  1785  CNKAFRDTFRLLLLCRWDK  1841
+              NK  R    LL +C  D+
+Sbjct  343   WNKTVRK--ELLGMCFGDR  359
+
+
+> sp|P33534|OPRK_MOUSE Kappa-type opioid receptor OS=Mus musculus 
+OX=10090 GN=Oprk1 PE=1 SV=1
+Length=380
+
+ Score = 67.0 bits (162),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 43/141 (30%), Positives = 72/141 (51%), Gaps = 2/141 (1%)
+ Frame = +3
+
+Query  648   GNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLLMGHWALGTLACDLW  827
+             GN LV+      T++KT  N ++ +LA AD ++ T +M   +   LM  W  G + C + 
+Sbjct  76    GNSLVMFVIIRYTKMKTATNIYIFNLALADALVTT-TMPFQSAVYLMNSWPFGDVLCKIV  134
+
+Query  828   LALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLWAPAI  1007
+             +++DY     S+  L ++S DRY +V  P+     RTP +A ++    WL++  +   AI
+Sbjct  135   ISIDYYNMFTSIFTLTMMSVDRYIAVCHPVKALDFRTPLKAKIINICIWLLASSVGISAI  194
+
+Query  1008  LFWQYLVGERTVLAGQCYIQF  1070
+             +     V E  V   +C +QF
+Sbjct  195   VLGGTKVRE-DVDVIECSLQF  214
+
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 26/103 (25%), Positives = 46/103 (45%), Gaps = 11/103 (11%)
+ Frame = +3
+
+Query  1605  KKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWELGYWLC----YVNSTVNPM  1772
+             ++  + +  ++  FI+ WTP +I +LV          T     Y+ C    Y NS++NP+
+Sbjct  270   RRITKLVLVVVAVFIICWTPIHIFILVEAL-GSTSHSTAALSSYYFCIALGYTNSSLNPV  328
+
+Query  1773  CYALCNKAFRDTFR------LLLLCRWDKRRWRKIPKRPGSVH  1883
+              YA  ++ F+  FR       + + R    R R   + P S+ 
+Sbjct  329   LYAFLDENFKRCFRDFCFPIKMRMERQSTNRVRNTVQDPASMR  371
+
+
+> sp|Q9EQQ4|GPR45_MOUSE Probable G-protein coupled receptor 45 
+OS=Mus musculus OX=10090 GN=Gpr45 PE=2 SV=1
+Length=373
+
+ Score = 63.2 bits (152),  Expect = 8e-11, Method: Compositional matrix adjust.
+ Identities = 55/210 (26%), Positives = 88/210 (42%), Gaps = 11/210 (5%)
+ Frame = +3
+
+Query  570   LAPGKGPWQVAF---IGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADL  740
+             L PG  P        + I   L+ +    GN +V I       +++  N  L +LA +D+
+Sbjct  22    LDPGDTPLSAPLRISLAIMMLLMIVVGFLGNTVVCIIVYQRPAMRSAINLLLATLAFSDI  81
+
+Query  741   IIGTFSMNLYTTYLLMGHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLS  920
+             ++    M      L+   W  G   C L   L +      V  LL+IS DR+  + +   
+Sbjct  82    MLSLCCMPFTAITLITVRWHFGDHFCRLSATLYWFFVLEGVAILLIISVDRFLIIVQ---  138
+
+Query  921   YRAKRTPRRAALMIGLAWLVSFVLWAPAILFWQYLVGERTVLAGQC---YIQFLSQPIIT  1091
+              + K  PRRA ++I  +W++SF + AP+   W ++  E    A QC   Y +F ++    
+Sbjct  139   RQDKLNPRRAKMIIAASWVLSFCISAPSFTGWTFM--EVPARAPQCVLGYTEFPAERAYV  196
+
+Query  1092  FGTAMAAFYLPVTVMCTLYWRIYRETENRA  1181
+                 +A F+ P  VM   Y  I       A
+Sbjct  197   VTLVVAVFFAPFGVMLCSYLCILNTVRKNA  226
+
+
+ Score = 34.3 bits (77),  Expect = 0.100, Method: Compositional matrix adjust.
+ Identities = 27/99 (27%), Positives = 43/99 (43%), Gaps = 9/99 (9%)
+ Frame = +3
+
+Query  1602  EKKAARTLSAILLAFILTWTPYNIMVLVSTFCK----DCVPETLWELGYWLCYVNSTVNP  1769
+             + KA  T+  + + F L W P+++  L+S F +         T      WL Y+ S  NP
+Sbjct  263   KTKAFTTILILFVGFSLCWLPHSVYSLLSAFSRRFYYSASFYTTSTCVLWLSYLKSVFNP  322
+
+Query  1770  MCYALCNKAFRDTFRLLLLCRWDKRRWRKIPKRPGSVHR  1886
+             + Y    K FR+    LL        ++ +PK P  + R
+Sbjct  323   IVYCWRIKKFREACIELL-----PHTFQILPKVPERIQR  356
+
+
+> tr|A0A0B4J1E4|A0A0B4J1E4_MOUSE G-protein-coupled receptor 39 
+OS=Mus musculus OX=10090 GN=Gpr39 PE=1 SV=1
+Length=456
+
+ Score = 53.1 bits (126),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 30/105 (29%), Positives = 58/105 (55%), Gaps = 3/105 (3%)
+ Frame = +3
+
+Query  693   KTVNNYFLLSLACADLIIGTFSMNLYTTYLLMGHWALGT--LACDLWLALDYVASNASVM  866
+             K V ++ ++SLAC+D+++    M +    ++       +  L+C L   L    S A+++
+Sbjct  66    KEVTDH-MVSLACSDILVFLIGMPMEFYSIIWNPLTTPSYALSCKLHTFLFETCSYATLL  124
+
+Query  867   NLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLWAP  1001
+             ++L +SF+RY ++  P  Y+A   PR+  L+IG  W+ S ++  P
+Sbjct  125   HVLTLSFERYIAICHPFKYKAVSGPRQVKLLIGFVWVTSALVALP  169
+
+
+ Score = 33.9 bits (76),  Expect = 0.15, Method: Compositional matrix adjust.
+ Identities = 29/106 (27%), Positives = 46/106 (43%), Gaps = 23/106 (22%)
+ Frame = +3
+
+Query  1566  QLAKRKTFSLVKEKKAARTLSAILLAFILT-----WTPYNIMVLVSTFCKDCVPETLWEL  1730
+             QL  RK+ S  +E + AR  + I L  I+      W P  I  +++       P+  W  
+Sbjct  263   QLQLRKSES--EESRTARRQTIIFLRLIVVTLAVCWMPNQIRRIMAA----AKPKHDWTR  316
+
+Query  1731  GYWLCYV------------NSTVNPMCYALCNKAFRDTFRLLLLCR  1832
+              Y+  Y+            +S VNP+ Y + ++ FR  F  +L CR
+Sbjct  317   TYFRAYMILLPFSDTFFYLSSVVNPLLYNVSSQQFRKVFWQVLCCR  362
+
+
+> sp|Q9WU02|V1BR_MOUSE Vasopressin V1b receptor OS=Mus musculus 
+OX=10090 GN=Avpr1b PE=3 SV=1
+Length=421
+
+ Score = 52.4 bits (124),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 57/196 (29%), Positives = 90/196 (46%), Gaps = 17/196 (9%)
+ Frame = +3
+
+Query  606   IGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLL  785
+             IGI   +L LAT  GNL VL+   +    ++  + F+L LA  DL +  F +     + +
+Sbjct  38    IGILATVLVLAT-GGNLAVLLILGLQGHKRSRMHLFVLHLALTDLGVALFQVLPQLLWDI  96
+
+Query  786   MGHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAAL-MI  962
+                +    L C     L  ++  AS   LL ++ DRY +V  PL  R+ + P ++   +I
+Sbjct  97    TYRFQGSDLLCRAVKYLQVLSMFASTYMLLAMTLDRYLAVCHPL--RSLQQPSQSTYPLI  154
+
+Query  963   GLAWLVSFVLWAPAILFWQYLVGERTVLAG----QCYIQFL----SQPIITFGTAMAAFY  1118
+                WL++ +L  P +    ++   R V+ G     C+  F      +  IT+ T MA F 
+Sbjct  155   AAPWLLAAILSLPQV----FIFSLREVIQGSGVLDCWADFYFSWGPRAYITW-TTMAIFV  209
+
+Query  1119  LPVTVMCTLYWRIYRE  1166
+             LPV V+   Y  I  E
+Sbjct  210   LPVVVLTACYGLICHE  225
+
+
+> sp|O55040|NMUR1_MOUSE Neuromedin-U receptor 1 OS=Mus musculus 
+OX=10090 GN=Nmur1 PE=2 SV=2
+Length=428
+
+ Score = 51.2 bits (121),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 39/143 (27%), Positives = 68/143 (48%), Gaps = 4/143 (3%)
+ Frame = +3
+
+Query  585   GPWQVAF---IGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTF  755
+             GP Q+     I +T  L+ +    GN L       N  ++T  N++L SLA +D+++   
+Sbjct  53    GPQQMKQFVPICVTYLLIFVVGTLGNGLTCTVILRNKTMRTPTNFYLFSLAVSDMLVLLV  112
+
+Query  756   SMNLYTTYLLMGH-WALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAK  932
+              + L    +   + + LG  AC   + L      ASV+N+  +S +RY +V RPL  ++ 
+Sbjct  113   GLPLELYEMQQNYPFQLGASACYFRILLLETVCLASVLNVTALSVERYVAVVRPLQAKSV  172
+
+Query  933   RTPRRAALMIGLAWLVSFVLWAP  1001
+              T      M+G  W+++ +   P
+Sbjct  173   MTRAHVRRMVGAIWVLATLFSLP  195
+
+
+ Score = 28.1 bits (61),  Expect = 7.8, Method: Compositional matrix adjust.
+ Identities = 21/91 (23%), Positives = 39/91 (43%), Gaps = 9/91 (10%)
+ Frame = +3
+
+Query  1563  EQLAKRKTFSLVKEKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWELGYWL  1742
+             E   +R        ++  + L A+++ F + W P++   ++ +       E L  L Y  
+Sbjct  279   ETSHRRIQLQDRGRRQVTKMLFALVVVFGICWAPFHADRIMWSLVYGHSTEGL-HLAYQC  337
+
+Query  1743  C--------YVNSTVNPMCYALCNKAFRDTF  1811
+                      Y+ S  NP+ Y+L +  FR+TF
+Sbjct  338   VHIASGIFFYLGSAANPVLYSLMSTRFRETF  368
+
+
+> tr|A0A1C7ZMY0|A0A1C7ZMY0_MOUSE Neuromedin-U receptor 1 OS=Mus 
+musculus OX=10090 GN=Nmur1 PE=3 SV=2
+Length=405
+
+ Score = 51.2 bits (121),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 39/143 (27%), Positives = 68/143 (48%), Gaps = 4/143 (3%)
+ Frame = +3
+
+Query  585   GPWQVAF---IGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTF  755
+             GP Q+     I +T  L+ +    GN L       N  ++T  N++L SLA +D+++   
+Sbjct  30    GPQQMKQFVPICVTYLLIFVVGTLGNGLTCTVILRNKTMRTPTNFYLFSLAVSDMLVLLV  89
+
+Query  756   SMNLYTTYLLMGH-WALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAK  932
+              + L    +   + + LG  AC   + L      ASV+N+  +S +RY +V RPL  ++ 
+Sbjct  90    GLPLELYEMQQNYPFQLGASACYFRILLLETVCLASVLNVTALSVERYVAVVRPLQAKSV  149
+
+Query  933   RTPRRAALMIGLAWLVSFVLWAP  1001
+              T      M+G  W+++ +   P
+Sbjct  150   MTRAHVRRMVGAIWVLATLFSLP  172
+
+
+ Score = 28.5 bits (62),  Expect = 6.2, Method: Compositional matrix adjust.
+ Identities = 21/91 (23%), Positives = 39/91 (43%), Gaps = 9/91 (10%)
+ Frame = +3
+
+Query  1563  EQLAKRKTFSLVKEKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWELGYWL  1742
+             E   +R        ++  + L A+++ F + W P++   ++ +       E L  L Y  
+Sbjct  256   ETSHRRIQLQDRGRRQVTKMLFALVVVFGICWAPFHADRIMWSLVYGHSTEGL-HLAYQC  314
+
+Query  1743  C--------YVNSTVNPMCYALCNKAFRDTF  1811
+                      Y+ S  NP+ Y+L +  FR+TF
+Sbjct  315   VHIASGIFFYLGSAANPVLYSLMSTRFRETF  345
+
+
+> sp|P49681|NPBW1_MOUSE Neuropeptides B/W receptor type 1 OS=Mus 
+musculus OX=10090 GN=Npbwr1 PE=3 SV=2
+Length=329
+
+ Score = 50.8 bits (120),  Expect = 6e-07, Method: Compositional matrix adjust.
+ Identities = 53/191 (28%), Positives = 81/191 (42%), Gaps = 17/191 (9%)
+ Frame = +3
+
+Query  606   IGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLL  785
+             + +  G++    + GN  VL        +KTV N F+L+LA AD +  T  + +     L
+Sbjct  42    VPVVYGVICAVGLAGNSAVLYVLLRTPRMKTVTNVFILNLAIADELF-TLVLPINIADFL  100
+
+Query  786   MGHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIG  965
+             +  W  G + C L +A+D   + +S+  L ++S DRY  V      R     R +    G
+Sbjct  101   LRRWPFGEVMCKLIVAVDQYNTFSSLYFLAVMSADRYLVVLATAESR-----RVSGRTYG  155
+
+Query  966   LAWLVSFVLWAPAIL----FWQYLVGERTVLAGQCYIQFLSQP------IITFGTAMAAF  1115
+              A  VS  +WA   L    F  +   +      QC + F  QP           T +  F
+Sbjct  156   AARAVSLAVWALVTLVVLPFAVFARLDEEQGRRQCVLVF-PQPEAFWWRASRLYTLVLGF  214
+
+Query  1116  YLPVTVMCTLY  1148
+              +PVT +C LY
+Sbjct  215   AIPVTTICALY  225
+
+
+ Score = 45.1 bits (105),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 28/82 (34%), Positives = 46/82 (56%), Gaps = 7/82 (9%)
+ Frame = +3
+
+Query  1602  EKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWELG--YW---LCYVNSTVN  1766
+             +K+    ++AIL   +L WTPY++  +V+      +P+T   +G  Y+   L Y NS +N
+Sbjct  248   KKRVTLLVAAILAVCLLCWTPYHLSTIVALTTD--LPQTPLVIGISYFITSLSYANSCLN  305
+
+Query  1767  PMCYALCNKAFRDTFRLLLLCR  1832
+             P  YA  + +FR + R L+ CR
+Sbjct  306   PFLYAFLDDSFRRSLRQLVSCR  327
+
+
+> tr|A0A1D5RLB6|A0A1D5RLB6_MOUSE Neuromedin-U receptor 1 OS=Mus 
+musculus OX=10090 GN=Nmur1 PE=3 SV=1
+Length=372
+
+ Score = 49.7 bits (117),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 37/137 (27%), Positives = 65/137 (47%), Gaps = 1/137 (1%)
+ Frame = +3
+
+Query  594   QVAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYT  773
+             Q   I +T  L+ +    GN L       N  ++T  N++L SLA +D+++    + L  
+Sbjct  3     QFVPICVTYLLIFVVGTLGNGLTCTVILRNKTMRTPTNFYLFSLAVSDMLVLLVGLPLEL  62
+
+Query  774   TYLLMGH-WALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRA  950
+               +   + + LG  AC   + L      ASV+N+  +S +RY +V RPL  ++  T    
+Sbjct  63    YEMQQNYPFQLGASACYFRILLLETVCLASVLNVTALSVERYVAVVRPLQAKSVMTRAHV  122
+
+Query  951   ALMIGLAWLVSFVLWAP  1001
+               M+G  W+++ +   P
+Sbjct  123   RRMVGAIWVLATLFSLP  139
+
+
+ Score = 28.5 bits (62),  Expect = 5.8, Method: Compositional matrix adjust.
+ Identities = 21/91 (23%), Positives = 39/91 (43%), Gaps = 9/91 (10%)
+ Frame = +3
+
+Query  1563  EQLAKRKTFSLVKEKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWELGYWL  1742
+             E   +R        ++  + L A+++ F + W P++   ++ +       E L  L Y  
+Sbjct  223   ETSHRRIQLQDRGRRQVTKMLFALVVVFGICWAPFHADRIMWSLVYGHSTEGL-HLAYQC  281
+
+Query  1743  C--------YVNSTVNPMCYALCNKAFRDTF  1811
+                      Y+ S  NP+ Y+L +  FR+TF
+Sbjct  282   VHIASGIFFYLGSAANPVLYSLMSTRFRETF  312
+
+
+> tr|Q7TRV9|Q7TRV9_MOUSE Olfactory receptor OS=Mus musculus OX=10090 
+GN=Olfr433 PE=3 SV=1
+Length=314
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 36/132 (27%), Positives = 66/132 (50%), Gaps = 6/132 (5%)
+ Frame = +3
+
+Query  597  VAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADL--IIGTFSMNLY  770
+            +AF+G  T  + L T+ GNL +++  + ++ L T   +F+  L+  +L  +  T    L+
+Sbjct  26   LAFLG--TLCIYLLTLAGNLFIIVLVQADSGLSTPMYFFISVLSFLELWYVSTTVPTLLH  83
+
+Query  771  TTYLLMGHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRA  950
+            T  LL GH  + + AC + L + +         L +++ DRY ++ RPL Y A  + +  
+Sbjct  84   T--LLHGHSPIPSSACFVQLYVFHSLGMTECYLLGVMALDRYLAICRPLHYHALMSRQVQ  141
+
+Query  951  ALMIGLAWLVSF  986
+              + G  W+  F
+Sbjct  142  LWLAGATWVAGF  153
+
+
+> sp|P35343|CXCR2_MOUSE C-X-C chemokine receptor type 2 OS=Mus 
+musculus OX=10090 GN=Cxcr2 PE=2 SV=1
+Length=359
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 45/167 (27%), Positives = 79/167 (47%), Gaps = 14/167 (8%)
+ Frame = +3
+
+Query  519   AAMNTSVPPAV---SPNITVLAPGKGPWQVAFIGITTGLLSLATVTGNLLVLISFKVNTE  689
+             + M + +P AV   S N+ +       + V  I +   LLSL    GN LV++    N  
+Sbjct  26    SGMPSILPDAVPCHSENLEI-----NSYAVVVIYVLVTLLSLV---GNSLVMLVILYNRS  77
+
+Query  690   LKTVNNYFLLSLACADLIIGTFSMNLYTTYLLMGHWALGTLACDLWLALDYVASNASVMN  869
+               +V + +LL+LA ADL     ++ ++    + G W  G+  C ++  +  V   +SV+ 
+Sbjct  78    TCSVTDVYLLNLAIADLFFA-LTLPVWAASKVNG-WTFGSTLCKIFSYVKEVTFYSSVLL  135
+
+Query  870   LLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLWAPAIL  1010
+             L  IS DRY ++    S   ++      + I + WL+S +L  P ++
+Sbjct  136   LACISMDRYLAIVHATSTLIQKRHLVKFVCIAM-WLLSVILALPILI  181
+
+
+ Score = 38.1 bits (87),  Expect = 0.007, Method: Compositional matrix adjust.
+ Identities = 21/80 (26%), Positives = 40/80 (50%), Gaps = 12/80 (15%)
+ Frame = +3
+
+Query  1599  KEKKAARTLSAILLAFILTWTPYNIMVLVSTFC-----------KDCVPETLWELGYWLC  1745
+             ++ +A R + A++L F+L W PYN+++   T             +D + + L      L 
+Sbjct  244   QKHRAMRVIFAVVLVFLLCWLPYNLVLFTDTLMRTKLIKETCERRDDIDKAL-NATEILG  302
+
+Query  1746  YVNSTVNPMCYALCNKAFRD  1805
+             +++S +NP+ YA   + FR 
+Sbjct  303   FLHSCLNPIIYAFIGQKFRH  322
+
+
+> tr|E9Q2D4|E9Q2D4_MOUSE C-X-C chemokine receptor type 4 (Fragment) 
+OS=Mus musculus OX=10090 GN=Cxcr4 PE=3 SV=8
+Length=272
+
+ Score = 42.4 bits (98),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 43/182 (24%), Positives = 78/182 (43%), Gaps = 11/182 (6%)
+ Frame = +3
+
+Query  624   LLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNL-YTTYLLMGHWA  800
+             ++ L  + GN LV++      +L+++ + + L L+ ADL+   F + L +     M  W 
+Sbjct  47    IIFLTGIVGNGLVILVMGYQKKLRSMTDKYRLHLSVADLL---FVITLPFWAVDAMADWY  103
+
+Query  801   LGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPL-SYRAKRTPRRAALMIGLAWL  977
+              G   C     +  V   +SV+ L  IS DRY ++     S R ++     A+ +G+ W+
+Sbjct  104   FGKFLCKAVHIIYTVNLYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKAVYVGV-WI  162
+
+Query  978   VSFVLWAPAILF-----WQYLVGERTVLAGQCYIQFLSQPIITFGTAMAAFYLPVTVMCT  1142
+              + +L  P  +F          G+   +  + Y   L   +  F   M    LP  V+ +
+Sbjct  163   PALLLTIPDFIFADVSQGDISQGDDRYICDRLYPDSLWMVVFQFQHIMVGLVLPGIVILS  222
+
+Query  1143  LY  1148
+              Y
+Sbjct  223   CY  224
+
+
+> tr|A0A0R4J0N8|A0A0R4J0N8_MOUSE C-X-C chemokine receptor type 
+4 OS=Mus musculus OX=10090 GN=Cxcr4 PE=1 SV=1
+Length=359
+
+ Score = 42.7 bits (99),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 43/182 (24%), Positives = 78/182 (43%), Gaps = 11/182 (6%)
+ Frame = +3
+
+Query  624   LLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNL-YTTYLLMGHWA  800
+             ++ L  + GN LV++      +L+++ + + L L+ ADL+   F + L +     M  W 
+Sbjct  49    IIFLTGIVGNGLVILVMGYQKKLRSMTDKYRLHLSVADLL---FVITLPFWAVDAMADWY  105
+
+Query  801   LGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPL-SYRAKRTPRRAALMIGLAWL  977
+              G   C     +  V   +SV+ L  IS DRY ++     S R ++     A+ +G+ W+
+Sbjct  106   FGKFLCKAVHIIYTVNLYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKAVYVGV-WI  164
+
+Query  978   VSFVLWAPAILF-----WQYLVGERTVLAGQCYIQFLSQPIITFGTAMAAFYLPVTVMCT  1142
+              + +L  P  +F          G+   +  + Y   L   +  F   M    LP  V+ +
+Sbjct  165   PALLLTIPDFIFADVSQGDISQGDDRYICDRLYPDSLWMVVFQFQHIMVGLVLPGIVILS  224
+
+Query  1143  LY  1148
+              Y
+Sbjct  225   CY  226
+
+
+ Score = 31.2 bits (69),  Expect = 0.83, Method: Compositional matrix adjust.
+ Identities = 19/80 (24%), Positives = 39/80 (49%), Gaps = 10/80 (13%)
+ Frame = +3
+
+Query  1599  KEKKAARTLSAILLAFILTWTPYNIMVLVSTFC------KDCVPETL---W-ELGYWLCY  1748
+             +++KA +T   ++LAF   W PY + + + +F       + C  E++   W  +   L +
+Sbjct  240   QKRKALKTTVILILAFFACWLPYYVGISIDSFILLGVIKQGCDFESIVHKWISITEALAF  299
+
+Query  1749  VNSTVNPMCYALCNKAFRDT  1808
+              +  +NP+ YA     F+ +
+Sbjct  300   FHCCLNPILYAFLGAKFKSS  319
+
+
+> tr|E9Q8M2|E9Q8M2_MOUSE Olfactory receptor OS=Mus musculus OX=10090 
+GN=Olfr432 PE=3 SV=1
+Length=312
+
+ Score = 42.0 bits (97),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 32/120 (27%), Positives = 60/120 (50%), Gaps = 4/120 (3%)
+ Frame = +3
+
+Query  633  LATVTGNLLVLISFKVNTELKTVNNYFLLSLACADL--IIGTFSMNLYTTYLLMGHWALG  806
+            L T+ GNL +++  + ++ L T   +F+  L+  +L  +  T    L+T  LL G   + 
+Sbjct  36   LLTLAGNLFIIVLIQADSGLSTPMYFFISVLSFLELWYVSTTVPTLLHT--LLHGPSPIP  93
+
+Query  807  TLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSF  986
+            + AC + L + +         L +++ DRY ++ RPL Y A  + +    ++G+ WL  F
+Sbjct  94   SSACFVQLYVFHSLGMTECYLLGVMALDRYLAICRPLHYHALMSRQVQKQLVGVTWLAGF  153
+
+
+> sp|Q8K087|GPR1_MOUSE G-protein coupled receptor 1 OS=Mus musculus 
+OX=10090 GN=Gpr1 PE=2 SV=1
+Length=353
+
+ Score = 41.2 bits (95),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 50/180 (28%), Positives = 86/180 (48%), Gaps = 19/180 (11%)
+ Frame = +3
+
+Query  642   VTGNLLV--LISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLLMG-HWALGTL  812
+             + GN +V  L+ FK     KTV   + L+LA AD I   F + LY +Y+ +  HW  G  
+Sbjct  53    IPGNAIVIWLMGFKWK---KTVTTLWFLNLAIADFIFVLF-LPLYISYVALSFHWPFGLW  108
+
+Query  813   ACDLWLALDYVASNASVMNLLLISFDRYFSVTRP-LSYRAKRTPRRAALMIGLAWLVSFV  989
+              C +   +  +   +SV  L +IS DRY  +  P LS+R  RT + + +++ L WL++ +
+Sbjct  109   LCKVNSFIAQLNMFSSVFFLTVISLDRYIHLLHPGLSHR-HRTLKSSLVVVILVWLLASL  167
+
+Query  990   LWAPAILFWQYLVGERTVLAGQCYIQF-------LSQPIITFGTAMAAFYLPVTVMCTLY  1148
+             L  P + F   +     ++   CY  F       +   ++T+   +  +  P+  M + Y
+Sbjct  168   LGGPTLYFRDTMEVNNHII---CYNNFQEHELTLMRHHVLTWVKFLFGYLFPLLTMSSCY  224
+
+
+ Score = 37.0 bits (84),  Expect = 0.015, Method: Compositional matrix adjust.
+ Identities = 23/85 (27%), Positives = 44/85 (52%), Gaps = 5/85 (6%)
+ Frame = +3
+
+Query  1575  KRKTFSLVKEKKAARTLSAILLAFILTWTPYNIMVL--VSTFCKDCVPETLWE---LGYW  1739
+             K K  +++  +K    + ++++AF++ WTPY++  +  +S          L     L   
+Sbjct  230   KMKKRNILISRKHLWMILSVVIAFLVCWTPYHLFSIWELSIHHNSSFQNVLQGGIPLSTG  289
+
+Query  1740  LCYVNSTVNPMCYALCNKAFRDTFR  1814
+             L ++NS +NP+ Y L +K F+  FR
+Sbjct  290   LAFLNSCLNPILYVLISKTFQARFR  314
+
+
+> sp|Q9ES90|GPR35_MOUSE G-protein coupled receptor 35 OS=Mus musculus 
+OX=10090 GN=Gpr35 PE=2 SV=1
+Length=307
+
+ Score = 39.3 bits (90),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 38/148 (26%), Positives = 70/148 (47%), Gaps = 14/148 (9%)
+ Frame = +3
+
+Query  711   FLLSLACADL-IIGTFSMNLYTTYLLMGHWALGTLACDLWLALDYVASNASVMNLLLISF  887
+             ++ +LA ADL ++ +    LY+         +  L+  ++LA  Y+    S+  +  I+ 
+Sbjct  55    YMTNLAVADLCLLCSLPFVLYSLKYSSSDTPVCQLSQGIYLANRYM----SISLVTAIAV  110
+
+Query  888   DRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLWAPAILFWQYLVGERTVLAGQCYIQ  1067
+             DRY +V  PL  R  R+PR+AA +    W+   ++    ++ W+  + E     G C+  
+Sbjct  111   DRYVAVRHPLRARELRSPRQAAAVCVALWV---IVVTSLVVRWRLGMQE----GGFCFSS  163
+
+Query  1068  FLSQPIITFGTAMAAFYLP--VTVMCTL  1145
+                +   T   ++  FYLP  + V C+L
+Sbjct  164   QTRRNFSTTAFSLLGFYLPLAIVVFCSL  191
+
+
+> tr|E9Q0Q2|E9Q0Q2_MOUSE Olfactory receptor OS=Mus musculus OX=10090 
+GN=Olfr424 PE=3 SV=1
+Length=315
+
+ Score = 37.0 bits (84),  Expect = 0.013, Method: Compositional matrix adjust.
+ Identities = 27/122 (22%), Positives = 55/122 (45%), Gaps = 0/122 (0%)
+ Frame = +3
+
+Query  642   VTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLLMGHWALGTLACD  821
+             V GNL+V  + +++T L      F+   +  ++   T ++    + L+     +  + C 
+Sbjct  39    VIGNLIVFFAVRMDTRLHNPMYNFISIFSFLEIWYTTATIPKMLSNLISKQRTISLIGCL  98
+
+Query  822   LWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLWAP  1001
+             L +   +   N+  + L  ++ DRY ++  PL Y    TPR  A +   + +  F++  P
+Sbjct  99    LQMYFFHSLGNSEGILLTTMAIDRYVAICNPLRYPTIMTPRLCAHLSAGSCIFGFLVLLP  158
+
+Query  1002  AI  1007
+              I
+Sbjct  159   EI  160
+
+
+> sp|Q99JG2|G37L1_MOUSE G-protein coupled receptor 37-like 1 OS=Mus 
+musculus OX=10090 GN=Gpr37l1 PE=1 SV=2
+Length=481
+
+ Score = 35.8 bits (81),  Expect = 0.035, Method: Compositional matrix adjust.
+ Identities = 31/128 (24%), Positives = 57/128 (45%), Gaps = 3/128 (2%)
+ Frame = +3
+
+Query  642   VTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLLMGHWALGTLACD  821
+             + GNL V+     +  LK+  N  L SLA  D ++  F + +     +     LG ++C 
+Sbjct  145   IVGNLSVMCIVWHSYYLKSAWNSILASLALWDFLVLFFCLPIVIFNEITKQRLLGDVSCR  204
+
+Query  822   LWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLA--WLVSFVLW  995
+                 ++  +   +  +L  +  DR+   T  L  + +   R  +++  LA  W+ S +L 
+Sbjct  205   AVPFMEVSSLGVTTFSLCALGIDRFHVATSTLP-KVRPIERCQSILAKLAVIWVGSMMLA  263
+
+Query  996   APAILFWQ  1019
+              P +L WQ
+Sbjct  264   VPELLLWQ  271
+
+
+> tr|E9Q4G0|E9Q4G0_MOUSE Olfactory receptor OS=Mus musculus OX=10090 
+GN=Olfr420 PE=3 SV=1
+Length=321
+
+ Score = 35.0 bits (79),  Expect = 0.048, Method: Compositional matrix adjust.
+ Identities = 25/104 (24%), Positives = 49/104 (47%), Gaps = 0/104 (0%)
+ Frame = +3
+
+Query  642  VTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLLMGHWALGTLACD  821
+            + GNL+++   ++N  L T   +F+ +L+  ++   T ++    + LL    ++    C 
+Sbjct  39   IVGNLVIITVVQLNAHLHTPMYFFISALSFLEIWYTTATIPKMLSSLLSERRSITLNGCV  98
+
+Query  822  LWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAA  953
+            L +   +    + V  L  ++FDRY ++  PL Y    T R  A
+Sbjct  99   LQMYFFHSTGISEVCLLTAMAFDRYLAICSPLHYPTIMTSRLCA  142
+
+
+> sp|P0C5I1|GPR25_MOUSE Probable G-protein coupled receptor 25 
+OS=Mus musculus OX=10090 GN=Gpr25 PE=3 SV=1
+Length=358
+
+ Score = 35.4 bits (80),  Expect = 0.049, Method: Compositional matrix adjust.
+ Identities = 30/100 (30%), Positives = 43/100 (43%), Gaps = 2/100 (2%)
+ Frame = +3
+
+Query  648  GNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLLMGH-WALGTLACDL  824
+            GN  V+         + + + F+L LA ADL     ++ L+      G  W  G   C +
+Sbjct  56   GNAFVVWLLSRQRGPRRLVDTFVLHLAAADLGF-VLTLPLWAAAEARGGLWPFGDGLCKV  114
+
+Query  825  WLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPR  944
+                  V   A  + L  +S DRY +V RPLS R  R+ R
+Sbjct  115  SSFALAVTRCAGALLLAGMSVDRYLAVGRPLSARPLRSAR  154
+
+
+ Score = 30.0 bits (66),  Expect = 2.0, Method: Compositional matrix adjust.
+ Identities = 16/40 (40%), Positives = 24/40 (60%), Gaps = 1/40 (3%)
+ Frame = +3
+
+Query  1740  LCYVNSTVNPMCYALCNKAFRDTFRLLLLCRWDKRRWRKI  1859
+             L +VNS+ NP+ Y L +++FR   R  L  R   R+ R+I
+Sbjct  292   LAFVNSSANPVIYLLLDRSFRARARFGLCAR-AGRQVRRI  330
+
+
+> sp|Q810W6|CXCR1_MOUSE C-X-C chemokine receptor type 1 OS=Mus 
+musculus OX=10090 GN=Cxcr1 PE=1 SV=1
+Length=351
+
+ Score = 34.3 bits (77),  Expect = 0.093, Method: Compositional matrix adjust.
+ Identities = 21/81 (26%), Positives = 38/81 (47%), Gaps = 10/81 (12%)
+ Frame = +3
+
+Query  1599  KEKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWE----------LGYWLCY  1748
+             ++ +A   + A++L F+L   PYN+++L  T     + E   E          +   L +
+Sbjct  241   QKHRAMGVIFAVVLVFLLCCLPYNLVLLSDTLLGAHLIEDTCERRNDIDQALYITEILGF  300
+
+Query  1749  VNSTVNPMCYALCNKAFRDTF  1811
+              +S +NP+ YA   + FR  F
+Sbjct  301   SHSCLNPIIYAFVGQNFRHEF  321
+
+
+> tr|A0A087WPI1|A0A087WPI1_MOUSE G-protein-coupled receptor 35 
+(Fragment) OS=Mus musculus OX=10090 GN=Gpr35 PE=3 SV=1
+Length=147
+
+ Score = 32.7 bits (73),  Expect = 0.12, Method: Compositional matrix adjust.
+ Identities = 26/91 (29%), Positives = 47/91 (52%), Gaps = 5/91 (5%)
+ Frame = +3
+
+Query  711  FLLSLACADL-IIGTFSMNLYTTYLLMGHWALGTLACDLWLALDYVASNASVMNLLLISF  887
+            ++ +LA ADL ++ +    LY+         +  L+  ++LA  Y+    S+  +  I+ 
+Sbjct  55   YMTNLAVADLCLLCSLPFVLYSLKYSSSDTPVCQLSQGIYLANRYM----SISLVTAIAV  110
+
+Query  888  DRYFSVTRPLSYRAKRTPRRAALMIGLAWLV  980
+            DRY +V  PL  R  R+PR+AA +    W++
+Sbjct  111  DRYVAVRHPLRARELRSPRQAAAVCVALWVI  141
+
+
+> sp|P56485|ACKR3_MOUSE Atypical chemokine receptor 3 OS=Mus musculus 
+OX=10090 GN=Ackr3 PE=1 SV=2
+Length=362
+
+ Score = 32.7 bits (73),  Expect = 0.26, Method: Compositional matrix adjust.
+ Identities = 31/115 (27%), Positives = 56/115 (49%), Gaps = 11/115 (10%)
+ Frame = +3
+
+Query  678   VNTELKTV---NNYFLLSLACADLIIGTFSMNLYTTYLLM-GHWALGTLACDLWLALDYV  845
+             VN + KT     + ++L+LA ADL +   ++ ++   L+    W +G L C +   +  +
+Sbjct  68    VNIQAKTTGYDTHCYILNLAIADLWV-VITIPVWVVSLVQHNQWPMGELTCKITHLIFSI  126
+
+Query  846   ASNASVMNLLLISFDRYFSVTR---PLSYRAKRTPRRAALMIGLAWLVSFVLWAP  1001
+                 S+  L  +S DRY S+T      SY+ K   R   +++   WL++F +  P
+Sbjct  127   NLFGSIFFLACMSVDRYLSITYFTGTSSYKKKMVRRVVCILV---WLLAFFVSLP  178
+
+
+> sp|Q3UJF0|GPR55_MOUSE G-protein coupled receptor 55 OS=Mus musculus 
+OX=10090 GN=Gpr55 PE=2 SV=2
+Length=327
+
+ Score = 32.3 bits (72),  Expect = 0.34, Method: Compositional matrix adjust.
+ Identities = 24/110 (22%), Positives = 48/110 (44%), Gaps = 9/110 (8%)
+ Frame = +3
+
+Query  816   CDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLW  995
+             C L   L +++   SV  +  IS DR+ ++  P+     R+PR+     G+  ++  ++W
+Sbjct  93    CTLVECLYFISMYGSVFTICFISLDRFLAIQYPILASHLRSPRKT---FGICCIIWMLVW  149
+
+Query  996   APAILFWQYLVGERTVLAGQCYIQFLS---QPIITFGTAMAAFYLPVTVM  1136
+               +I  + +    R V   +C+           + F   +  F LP+ +M
+Sbjct  150   IGSIPIYTF---HREVERYKCFHNMSDVTWSASVFFPLEIFGFLLPMGIM  196
+
+
+> tr|Q8VET3|Q8VET3_MOUSE Olfactory receptor OS=Mus musculus OX=10090 
+GN=Olfr1412 PE=2 SV=1
+Length=321
+
+ Score = 32.0 bits (71),  Expect = 0.48, Method: Compositional matrix adjust.
+ Identities = 32/155 (21%), Positives = 66/155 (43%), Gaps = 11/155 (7%)
+ Frame = +3
+
+Query  528  NTSVPPAVSPNITVLAPGKGPWQVAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVNN  707
+            N S+ P       ++  G G    A +     +L + TV GNL +++   ++  L +   
+Sbjct  8    NGSLTPVSLQAFVLVGFGGGAETQALLFAVFLVLYMVTVLGNLTMIVVITLDARLHSPMY  67
+
+Query  708  YFLLSLA----CADLIIGTFSM-NLYTTYLLMGHWALGTLACDLWLALDYVASNASVMNL  872
+            +FL +L+    C   +I   +M N Y++ +      +G   C   L        +  + L
+Sbjct  68   FFLKNLSFVDFCYSSVIAPKAMANFYSSKV------IGVAGCAAQLFFFSFLGTSEALLL  121
+
+Query  873  LLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWL  977
+             ++++DR+ ++  PL Y    +    A ++  A+ 
+Sbjct  122  AVMAYDRFMAICSPLHYPVTMSSTVCACLVLAAYF  156
+
+
+> sp|Q9WUK7|OPN3_MOUSE Opsin-3 OS=Mus musculus OX=10090 GN=Opn3 
+PE=1 SV=1
+Length=400
+
+ Score = 28.9 bits (63),  Expect = 4.5, Method: Compositional matrix adjust.
+ Identities = 19/70 (27%), Positives = 30/70 (43%), Gaps = 1/70 (1%)
+ Frame = +3
+
+Query  1602  EKKAARTLSAILLAFILTWTPYNIM-VLVSTFCKDCVPETLWELGYWLCYVNSTVNPMCY  1778
+             EKK A+    +   F+  W PY +   LV       V  T+  + Y     ++  NP+ Y
+Sbjct  248   EKKVAKMCFLMAFVFLTCWMPYIVTRFLVVNGYGHLVTPTVSIVSYLFAKSSTVYNPVIY  307
+
+Query  1779  ALCNKAFRDT  1808
+                N+ FR +
+Sbjct  308   IFMNRKFRRS  317
+
+
+> tr|E9Q050|E9Q050_MOUSE Olfactory receptor OS=Mus musculus OX=10090 
+GN=Olfr220 PE=3 SV=1
+Length=325
+
+ Score = 28.5 bits (62),  Expect = 6.3, Method: Compositional matrix adjust.
+ Identities = 25/117 (21%), Positives = 53/117 (45%), Gaps = 4/117 (3%)
+ Frame = +3
+
+Query  633  LATVTGNLLVLISFKVNTELKTVNNYFLLSLACADL-IIGTFSMNLYTTYLLMGH-WALG  806
+            L T+  NLL++++ + + +L     +FL  L+  ++  +   S  +   +L      +  
+Sbjct  41   LLTLAENLLIILAIRSDGQLHKPMYFFLSHLSFLEMWYVTVISPKMLVDFLSKDKSISFN  100
+
+Query  807  TLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWL  977
+                 L+  + +V +   +  L +++FDRY ++  PL Y    T +   +M G  W 
+Sbjct  101  GCMTQLYFFVTFVCTEYIL--LAVMAFDRYVAICNPLRYPVIMTNQLCGVMAGGCWF  155
+
+
+> sp|Q0VBN2|DSEL_MOUSE Dermatan-sulfate epimerase-like protein 
+OS=Mus musculus OX=10090 GN=Dsel PE=2 SV=1
+Length=1207
+
+ Score = 28.5 bits (62),  Expect = 7.1, Method: Compositional matrix adjust.
+ Identities = 21/69 (30%), Positives = 31/69 (45%), Gaps = 4/69 (6%)
+ Frame = -2
+
+Query  5086  PDAGPIPSFLDVPLVPKLHFFQCCSASSALHLHTLDTGRAFISEGGLGLQGSM----NKP  4919
+             P A P+ S        KLHFFQ    +S   L+ +   RA+I     G + S+    N P
+Sbjct  991   PSARPVLSLSSGSWTLKLHFFQEVLGTSMRALYIVRDPRAWIYSVLYGSKPSLYSLKNVP  1050
+
+Query  4918  EALTRVSAV  4892
+             E L ++  +
+Sbjct  1051  EHLAKLFKI  1059
+
+
+> tr|Q8VFC5|Q8VFC5_MOUSE Olfactory receptor OS=Mus musculus OX=10090 
+GN=Olfr1410 PE=2 SV=1
+Length=322
+
+ Score = 28.1 bits (61),  Expect = 8.5, Method: Compositional matrix adjust.
+ Identities = 23/118 (19%), Positives = 57/118 (48%), Gaps = 10/118 (8%)
+ Frame = +3
+
+Query  624  LLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSM-----NLYTTYLLM  788
+            +L + T+ GNL +++   ++  L +   +FL +L+  DL + +  +     N++++   +
+Sbjct  40   VLYVVTILGNLTMIMVITLDARLHSPMYFFLKNLSFVDLCLSSVIIPNALANIFSSSKTI  99
+
+Query  789  GHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMI  962
+                  T     +     +A+  +V+ L ++++DR+ ++  PL Y     P   A ++
+Sbjct  100  SFAGCAT----QFFFFSLLAATEAVL-LAVMAYDRFMAICSPLRYPVTMCPMTCARLV  152
+
+
+> tr|E9PYK6|E9PYK6_MOUSE Olfactory receptor OS=Mus musculus OX=10090 
+GN=Olfr1410 PE=3 SV=1
+Length=323
+
+ Score = 28.1 bits (61),  Expect = 8.5, Method: Compositional matrix adjust.
+ Identities = 23/118 (19%), Positives = 57/118 (48%), Gaps = 10/118 (8%)
+ Frame = +3
+
+Query  624  LLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSM-----NLYTTYLLM  788
+            +L + T+ GNL +++   ++  L +   +FL +L+  DL + +  +     N++++   +
+Sbjct  40   VLYVVTILGNLTMIMVITLDARLHSPMYFFLKNLSFVDLCLSSVIIPNALANIFSSSKTI  99
+
+Query  789  GHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMI  962
+                  T     +     +A+  +V+ L ++++DR+ ++  PL Y     P   A ++
+Sbjct  100  SFAGCAT----QFFFFSLLAATEAVL-LAVMAYDRFMAICSPLRYPVTMCPMTCARLV  152
+
+
+> tr|E9PZE9|E9PZE9_MOUSE SPATS2-like protein OS=Mus musculus OX=10090 
+GN=Spats2l PE=1 SV=1
+Length=488
+
+ Score = 28.1 bits (61),  Expect = 9.8, Method: Compositional matrix adjust.
+ Identities = 12/33 (36%), Positives = 20/33 (61%), Gaps = 0/33 (0%)
+ Frame = -2
+
+Query  2839  GVYRRESAGWDRPMWGKAGGRQHAGGLARSAQS  2741
+             G + R+S+G ++P  GKA   +   GLA +A +
+Sbjct  316   GNFARKSSGHNKPSEGKAANPKMVSGLANTADA  348
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.134    0.401    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 2134396000
+
+
+  Database: chrom1MM.fasta
+    Posted date:  Jan 14, 2019  3:54 PM
+  Number of letters in database: 1,399,400
+  Number of sequences in database:  3,154
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 12
+Window for multiple hits: 40

@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastx</BlastOutput_program>
+  <BlastOutput_version>BLASTX 2.8.1+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>pdb</BlastOutput_db>
+  <BlastOutput_query-ID>Query_182839</BlastOutput_query-ID>
+  <BlastOutput_query-def>No definition line</BlastOutput_query-def>
+  <BlastOutput_query-len>1000</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_182839</Iteration_query-ID>
+  <Iteration_query-def>No definition line</Iteration_query-def>
+  <Iteration_query-len>1000</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|22218649|pdb|1GKR|A</Hit_id>
+  <Hit_def>Chain A, L-Hydantoinase (Dihydropyrimidinase) From Arthrobacter Aurescens &gt;gi|22218650|pdb|1GKR|B Chain B, L-Hydantoinase (Dihydropyrimidinase) From Arthrobacter Aurescens &gt;gi|22218651|pdb|1GKR|C Chain C, L-Hydantoinase (Dihydropyrimidinase) From Arthrobacter Aurescens &gt;gi|22218652|pdb|1GKR|D Chain D, L-Hydantoinase (Dihydropyrimidinase) From Arthrobacter Aurescens</Hit_def>
+  <Hit_accession>1GKR_A</Hit_accession>
+  <Hit_len>458</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.4166</Hsp_bit-score>
+      <Hsp_score>67</Hsp_score>
+      <Hsp_evalue>3.3216</Hsp_evalue>
+      <Hsp_query-from>653</Hsp_query-from>
+      <Hsp_query-to>808</Hsp_query-to>
+      <Hsp_hit-from>401</Hsp_hit-from>
+      <Hsp_hit-to>453</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>15</Hsp_identity>
+      <Hsp_positive>27</Hsp_positive>
+      <Hsp_gaps>1</Hsp_gaps>
+      <Hsp_align-len>53</Hsp_align-len>
+      <Hsp_qseq>KASQIELIHRFPPAVGLFRRGGPVLVALSWELY-KKSPAILELALSQYITQRQ</Hsp_qseq>
+      <Hsp_hseq>DASQFRSLHKYSPFDGMPVTGAPVLTMVRGTVVAEKGEVLVEQGFGQFVTRRN</Hsp_hseq>
+      <Hsp_midline> ASQ   +H++ P  G+   G PVL  +   +  +K   ++E    Q++T+R </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|109157943|pdb|2GP4|A</Hit_id>
+  <Hit_def>Chain A, Structure Of [fes]cluster-free Apo Form Of 6-phosphogluconate Dehydratase From Shewanella Oneidensis &gt;gi|109157944|pdb|2GP4|B Chain B, Structure Of [fes]cluster-free Apo Form Of 6-phosphogluconate Dehydratase From Shewanella Oneidensis</Hit_def>
+  <Hit_accession>2GP4_A</Hit_accession>
+  <Hit_len>628</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>30.0314</Hsp_bit-score>
+      <Hsp_score>66</Hsp_score>
+      <Hsp_evalue>5.72717</Hsp_evalue>
+      <Hsp_query-from>617</Hsp_query-from>
+      <Hsp_query-to>718</Hsp_query-to>
+      <Hsp_hit-from>488</Hsp_hit-from>
+      <Hsp_hit-to>521</Hsp_hit-to>
+      <Hsp_query-frame>2</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>13</Hsp_identity>
+      <Hsp_positive>19</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>34</Hsp_align-len>
+      <Hsp_qseq>RDCLRVVWNQTPKASQIELIHRFPPAVGLFRRGG</Hsp_qseq>
+      <Hsp_hseq>RDCVVVVKGQGPKANGXPELHKLTPLLGSLQDKG</Hsp_hseq>
+      <Hsp_midline>RDC+ VV  Q PKA+    +H+  P +G  +  G</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|550544878|pdb|4MV2|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of Plu4264 Protein From Photorhabdus Luminescens &gt;gi|550544879|pdb|4MV2|B Chain B, Crystal Structure Of Plu4264 Protein From Photorhabdus Luminescens &gt;gi|635576067|pdb|4Q29|A Chain A, Ensemble Refinement of plu4264 protein from Photorhabdus luminescens &gt;gi|635576068|pdb|4Q29|B Chain B, Ensemble Refinement of plu4264 protein from Photorhabdus luminescens</Hit_def>
+  <Hit_accession>4MV2_A</Hit_accession>
+  <Hit_len>128</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>28.1054</Hsp_bit-score>
+      <Hsp_score>61</Hsp_score>
+      <Hsp_evalue>8.82117</Hsp_evalue>
+      <Hsp_query-from>187</Hsp_query-from>
+      <Hsp_query-to>264</Hsp_query-to>
+      <Hsp_hit-from>63</Hsp_hit-from>
+      <Hsp_hit-to>88</Hsp_hit-to>
+      <Hsp_query-frame>1</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>18</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>26</Hsp_align-len>
+      <Hsp_qseq>SHGVWKMNDHEFPLTKQDLVCAPIRS</Hsp_qseq>
+      <Hsp_hseq>GNAIIRINDEDFPVTKGDLIIIPLDS</Hsp_hseq>
+      <Hsp_midline> + + ++ND +FP+TK DL+  P+ S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>103249</Statistics_db-num>
+      <Statistics_db-len>26320689</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

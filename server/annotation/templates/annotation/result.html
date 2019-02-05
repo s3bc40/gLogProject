@@ -1,0 +1,27 @@
+{% extends "annotation/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid" style="padding-top : 100px;">
+    <h1> Results of blastx : 
+    <a href="{% get_media_prefix %}/annotation/my_blast.xml" download="results.xml"><button type="button" class="btn btn-primary">Get Blast XML</button></a>
+    <a href="{% get_media_prefix %}/annotation/sequence.json" download="annotSequences.json"><button type="button" class="btn btn-primary">Get JSON</button></a>
+        </h1>
+    {% for query in blast_results %}
+        <h3>Query {{forloop.counter}} : {% if query|length == 0%} None {% endif %} </h3>
+            {% for record in query %}
+            <div class="container" style="border-style: dotted; margin-bottom : 50px;">
+                <h4>{{record.description}}</h4>
+                <h5>Length: {{record.length}} </h5>
+                <h5>Score : {{record.score}}</h5>
+                <h5>E.value : {{record.e_value}}</h5>
+                <h5>Len alignement : {{record.len_align}}</h5>
+                <h5>Start query : {{record.start_query}} </h5>
+                <h5>End query : {{record.end_query}} </h5>
+                <h5>Start subject : {{record.start_sbjct}} </h5>
+                <h5>End subject : {{record.end_sbjct}} </h5>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %}
