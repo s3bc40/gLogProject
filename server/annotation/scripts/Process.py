@@ -23,6 +23,7 @@ import json
 import urllib.request
 import shutil
 import subprocess
+import re
 
 def writeJsonSeq(listSeqRecord):
     jsonData={}
@@ -101,6 +102,90 @@ def writeAnnot(blast_results):
                 data["seqRecords"][j]["annotations"].append(info)
     with open('media/annotation/sequence.json',"w") as file:
         json.dump(data,file,indent=4,sort_keys=True,ensure_ascii=False)
+
+def writeVizuJSON():
+    newJson = {}
+    with open('media/annotation/sequence.json',"r") as f:
+        data=json.load(f)
+        max_length=0
+        ###On détermine le chromosome qui a la plus grande taille pour
+        ###que l'affichage de la visualisation fonctionne
+        for i in range(len(data["seqRecords"])):
+            if len(data["seqRecords"][i]["seq"]) > max_length:
+                max_length=len(data["seqRecords"][i]["seq"])
+        newJson["sequenceLength"]=max_length
+        newJson["rows"]=[]
+        for i in range(len(data['seqRecords'])):
+            if len(data["seqRecords"][i]["annotations"]) > 0:
+                blocks=[]
+                label=""
+                for j in range(len(data["seqRecords"][i]["annotations"])):
+                    link=data["seqRecords"][i]['annotations'][j]["description"]
+                    link=link.split("|")[3]
+                    label=data["seqRecords"][i]["description"]
+                    word=label.split()
+                    label=word[5]+" "+word[6]
+                    label=label.replace(",","")
+                    blocks.append({
+                        "startPos":data["seqRecords"][i]["annotations"][j]["start_query"],
+                        "endPos":data["seqRecords"][i]["annotations"][j]["end_query"],
+                        "tooltip":data["seqRecords"][i]["annotations"][j]["description"],
+                        "link":"https://www.uniprot.org/uniprot/"+link #à modifier
+                    
+                    })
+                newJson["rows"].append({"label":label,
+                    "color":"#999999","xcolor":"#990000",
+                    "blocks":blocks})
+
+    with open('media/annotation/visualization.json','w') as file:
+        json.dump(newJson,file,indent=4,sort_keys=True,ensure_ascii=False)      
+
+# {"sequenceLength":255,
+#  "rows":
+#   [
+#    {"label":"Row Label 1",
+#     "color":"#999999",
+#     "xcolor":"#990000",
+# 	"blocks":
+# 	[
+# 	  {	"startPos":25,
+# 		"endPos":37,
+# 		"tooltip":"tooltip for this block",
+# 		"link":"http://google.com"
+# 	  }
+# 	]
+#    },
+#    {"label":"Row Label 2",
+#     "color":"#337700",
+#     "xcolor":"#000088",
+# 	"blocks":
+# 	[
+# 	  {	"startPos":55,
+# 		"endPos":77,
+# 		"tooltip":"tooltip for this block",
+# 		"link":"http://google.com"
+# 	  },
+# 	  {	"startPos":65,
+# 		"endPos":87,
+# 		"tooltip":"tooltip for this block",
+# 		"link":"http://google.com"
+# 	  }
+# 	]
+#    },
+#    {"label":"Row Label 3",
+#     "color":"#880000",
+#     "xcolor":"#008800",
+# 	"blocks":
+# 	[
+# 	  {	"startPos":41,
+# 		"endPos":77,
+# 		"tooltip":"",
+# 		"link":""
+# 	  }
+# 	]
+#    }
+#   ]
+# }
 
 # def getResults():
 #     with open("media/my_blast.xml") as result_handle:

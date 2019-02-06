@@ -37,6 +37,7 @@ def process(request):
             ## Annotation process
             Process.processBlastx(fs.path(uploaded_file.name))
             blast_results = Process.parseBlast_XML()
+            Process.writeVizuJSON()
 
             ## WIP : delete files unused after process
             fs.delete(uploaded_file.name)
