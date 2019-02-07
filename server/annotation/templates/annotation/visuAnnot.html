@@ -6,43 +6,66 @@
 <br>
 <br>
 
-<h3>Visualization results</h3>
-</br>
+<h3>Visualization Page</h3>
+
 <!-- Optional enclosing div, it must have this class on it.
-		If this div exists, then the search for
-		"mason-viewer-svg-not-supported" or "mason-viewer-generic-json-failed-to-create"
-		will only take place within this enclosing div.  -->
+      If this div exists, then the search for
+      "mason-viewer-svg-not-supported" or "mason-viewer-generic-json-failed-to-create"
+      will only take place within this enclosing div.  -->
 <div class="mason-enclosing-div">
+  
+ <div>
+   <p>You'll find the results of the blastX below.</p>
+   <p>Each row represent a chromosome of the mouse.</p>
+   <p>For each chromosome we can see the matched proteins.</p>
+   <p>The length of the longest chromosome is selected for the visualization.</p>
+   <p>Also, colors are selected randomly from a palette at the creation of the JSON used for the visualization.</p>
+ </div> 
+ <br>
+
+  <div style="padding:4px; border:4px solid #e0e0e0;">
+    <div style="padding:3px; background-color:#ffffff;">
+
+    
+  <!-- mason_data_json_file_uri is required. -->
+  <!-- The file must include the path  -->
+
+  <!-- The Mason viewer will be the width (at the time it is created) of the div it is created in. -->
+  <div class="generic-json-mason-viewer mason-viewer-jq" style="width:auto;" mason_data_json_file_uri="../../../media/annotation/visualization.json"></div>
 
 
-    <!-- mason_data_json_file_uri is required. -->
-    <!-- The file must include the path  -->
+  <!-- This div will only be shown if creating the mason viewer failed, it must have this class on it -->
+  <div class="mason-viewer-generic-json-failed-to-create" style="display: none; text-align: center; color: darkred;">
 
-    <!-- The Mason viewer will be the width (at the time it is created) of the div it is created in. -->
-    <div class="generic-json-mason-viewer mason-viewer-jq" style="width:90%;" mason_data_json_file_uri="../../../media/annotation/visualization.json"></div>
+    <div>&nbsp;</div>
+    <h3>Failed to create Mason Viewer</h3>
+    <div>&nbsp;</div>
 
+  </div>
 
-    <!-- This div will only be shown if creating the mason viewer failed, it must have this class on it -->
-    <div class="mason-viewer-generic-json-failed-to-create" style="display: none; text-align: center; color: darkred;">
+  <!-- This div will only be shown if SVG is not supported, it must have this class on it -->
+  <div class="mason-viewer-svg-not-supported" style="display: none; text-align: center; color: darkred;">
 
-        <div>&nbsp;</div>
-        <h3>Failed to create Mason Viewer</h3>
-        <div>&nbsp;</div>
-
-    </div>
-
-    <!-- This div will only be shown if SVG is not supported, it must have this class on it -->
-    <div class="mason-viewer-svg-not-supported" style="display: none; text-align: center; color: darkred;">
-
-        <div>&nbsp;</div>
-        <h3>Unable to show Mason Viewer due to lack of SVG support in this browser</h3>
-        <div>&nbsp;</div>
-        <div>Please use a different browser to view the Mason Viewer.<br />
-            Possible choices are Firefox, Google Chrome, Internet Explorer version 9 or higher.</div>
-    </div>
-<br>    
-<p>You can load the UniprotKB site related to one hit (protein) by clicking on the link on the visualization rectangle !</p>
+    <div>&nbsp;</div>
+    <h3>Unable to show Mason Viewer due to lack of SVG support in this browser</h3>
+    <div>&nbsp;</div>
+    <div>Please use a different browser to view the Mason Viewer.<br />
+      Possible choices are Firefox, Google Chrome, Internet Explorer version 9 or higher.</div>
+  </div>
 </div>
+</div>
+
+<br>
+<div style="padding:3px; border:5px double #ff6b00; background-color:#ffdbc1;">
+<strong>Hints</strong>: You can go to the UniprotKB website to see informations about the proteins by clicking on the rectangles above.
+</div>
+<br>
+<div>
+  <p><strong>The visualization is using the Mason Viewer developped by :</strong></p>
+  <p>Daniel Jaschob, Trisha N. Davis, and Michael Riffle.<br> Mason: a JavaScript web site widget for visualizing and comparing annotated features in nucleotide or protein sequences.<br> BMC Res Notes. 2015 Mar 7;8:70. doi: 10.1186/s13104-015-1009-z.</p>
+</div>
+</div>
+
 
 
 
