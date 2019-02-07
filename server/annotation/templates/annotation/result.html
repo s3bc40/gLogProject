@@ -6,6 +6,7 @@
     <h1> Results of blastx : 
     <a href="{% get_media_prefix %}/annotation/my_blast.xml" download="results.xml"><button type="button" class="btn btn-primary">Get Blast XML</button></a>
     <a href="{% get_media_prefix %}/annotation/sequence.json" download="annotSequences.json"><button type="button" class="btn btn-primary">Get JSON</button></a>
+    <button type="button" class="btn btn-primary" onclick="location.href={% url 'annot-visu'%}">See visualization</button></a>
         </h1>
     {% for query in blast_results %}
         <h3>Query {{forloop.counter}} : {% if query|length == 0%} None {% endif %} </h3>

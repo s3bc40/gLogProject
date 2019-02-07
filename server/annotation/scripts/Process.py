@@ -24,6 +24,7 @@ import urllib.request
 import shutil
 import subprocess
 import re
+import random
 
 def writeJsonSeq(listSeqRecord):
     jsonData={}
@@ -104,6 +105,9 @@ def writeAnnot(blast_results):
         json.dump(data,file,indent=4,sort_keys=True,ensure_ascii=False)
 
 def writeVizuJSON():
+    colors=["#CD5C5C","#F08080","#FA8072","#E9967A","#FFA07A","#DC143C","#FF0000","#B22222","#8B0000","#C19A6B","#CD7F32",
+    "#C88141","#C58917","#AF9B60","#AF7817","#B87333","#966F33","#806517","#827839","#827B60","#786D5F","#493D26","#483C32","#6F4E37"]
+    color_selected=[]
     newJson = {}
     with open('media/annotation/sequence.json',"r") as f:
         data=json.load(f)
@@ -120,6 +124,10 @@ def writeVizuJSON():
                 blocks=[]
                 label=""
                 for j in range(len(data["seqRecords"][i]["annotations"])):
+                    color=colors[random.randint(0,len(colors)-1)]
+                    if color in color_selected:
+                        color=colors[random.randint(0,len(colors)-1)]
+                    color_selected.append(color)
                     link=data["seqRecords"][i]['annotations'][j]["description"]
                     link=link.split("|")[3]
                     label=data["seqRecords"][i]["description"]
@@ -134,7 +142,7 @@ def writeVizuJSON():
                     
                     })
                 newJson["rows"].append({"label":label,
-                    "color":"#999999","xcolor":"#990000",
+                    "color":color,"xcolor":"#990000",
                     "blocks":blocks})
 
     with open('media/annotation/visualization.json','w') as file:
