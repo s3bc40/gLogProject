@@ -3,63 +3,63 @@
         {
             "blocks": [
                 {
-                    "endPos": 2827,
+                    "endPos": 2670,
                     "link": "https://www.uniprot.org/uniprot/P41251",
                     "startPos": 2591,
-                    "tooltip": "gnl|BL_ORD_ID|65 sp|P41251|NRAM1_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=2"
+                    "tooltip": "e_value: 2.53216e-48 score: 398.0"
                 },
                 {
-                    "endPos": 2585,
+                    "endPos": 2526,
                     "link": "https://www.uniprot.org/uniprot/P41251",
                     "startPos": 2496,
-                    "tooltip": "gnl|BL_ORD_ID|65 sp|P41251|NRAM1_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=2"
+                    "tooltip": "e_value: 2.53216e-48 score: 125.0"
                 },
                 {
-                    "endPos": 2827,
+                    "endPos": 2670,
                     "link": "https://www.uniprot.org/uniprot/A0A087WNR0",
                     "startPos": 2591,
-                    "tooltip": "gnl|BL_ORD_ID|1306 tr|A0A087WNR0|A0A087WNR0_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=1"
+                    "tooltip": "e_value: 2.96565e-48 score: 397.0"
                 },
                 {
-                    "endPos": 2585,
+                    "endPos": 2526,
                     "link": "https://www.uniprot.org/uniprot/A0A087WNR0",
                     "startPos": 2496,
-                    "tooltip": "gnl|BL_ORD_ID|1306 tr|A0A087WNR0|A0A087WNR0_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=1"
+                    "tooltip": "e_value: 2.96565e-48 score: 125.0"
                 }
             ],
-            "color": "#AF9B60",
+            "color": "#B87333",
             "label": "chromosome 2",
             "xcolor": "#990000"
         },
         {
             "blocks": [
                 {
-                    "endPos": 1034,
+                    "endPos": 448,
                     "link": "https://www.uniprot.org/uniprot/E9PVR6",
                     "startPos": 141,
-                    "tooltip": "gnl|BL_ORD_ID|2329 tr|E9PVR6|E9PVR6_MOUSE Vomeronasal type-1 receptor OS=Mus musculus OX=10090 GN=Vmn1r1 PE=3 SV=1"
+                    "tooltip": "e_value: 7.99922e-28 score: 281.0"
                 }
             ],
-            "color": "#493D26",
+            "color": "#C19A6B",
             "label": "chromosome 5",
             "xcolor": "#990000"
         },
         {
             "blocks": [
                 {
-                    "endPos": 6917,
+                    "endPos": 6652,
                     "link": "https://www.uniprot.org/uniprot/P41047",
                     "startPos": 6519,
-                    "tooltip": "gnl|BL_ORD_ID|357 sp|P41047|TNFL6_MOUSE Tumor necrosis factor ligand superfamily member 6 OS=Mus musculus OX=10090 GN=Faslg PE=1 SV=1"
+                    "tooltip": "e_value: 1.00006e-85 score: 714.0"
                 },
                 {
-                    "endPos": 558,
+                    "endPos": 327,
                     "link": "https://www.uniprot.org/uniprot/P41047",
                     "startPos": 211,
-                    "tooltip": "gnl|BL_ORD_ID|357 sp|P41047|TNFL6_MOUSE Tumor necrosis factor ligand superfamily member 6 OS=Mus musculus OX=10090 GN=Faslg PE=1 SV=1"
+                    "tooltip": "e_value: 8.93125e-52 score: 461.0"
                 }
             ],
-            "color": "#C88141",
+            "color": "#F08080",
             "label": "chromosome 1",
             "xcolor": "#990000"
         }

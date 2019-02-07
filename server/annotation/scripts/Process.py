@@ -136,8 +136,8 @@ def writeVizuJSON():
                     label=label.replace(",","")
                     blocks.append({
                         "startPos":data["seqRecords"][i]["annotations"][j]["start_query"],
-                        "endPos":data["seqRecords"][i]["annotations"][j]["end_query"],
-                        "tooltip":data["seqRecords"][i]["annotations"][j]["description"],
+                        "endPos":data["seqRecords"][i]["annotations"][j]["start_query"]+data["seqRecords"][i]["annotations"][j]["len_align"]+data["seqRecords"][i]["annotations"][j]["gaps"],
+                        "tooltip":"e_value: "+str(data["seqRecords"][i]["annotations"][j]["e_value"])+" score: "+str(data["seqRecords"][i]["annotations"][j]["score"]),
                         "link":"https://www.uniprot.org/uniprot/"+link #à modifier
                     
                     })

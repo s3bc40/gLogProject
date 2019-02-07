@@ -5,7 +5,8 @@
 <div class="container-fluid" style="padding-top : 100px;">
     <h1> Results of blastx : 
     <a href="{% get_media_prefix %}/annotation/my_blast.xml" download="results.xml"><button type="button" class="btn btn-primary">Get Blast XML</button></a>
-    <a href="{% get_media_prefix %}/annotation/sequence.json" download="annotSequences.json"><button type="button" class="btn btn-primary">Get JSON</button></a>
+    <a href="{% get_media_prefix %}/annotation/sequence.json" download="annotSequences.json"><button type="button" class="btn btn-primary">Get JSON from Blast</button></a>
+    <a href="{% get_media_prefix %}/annotation/visualization.json" download="vizu.json"><button type="button" class="btn btn-primary">Get JSON for Visualization</button></a>
     <button type="button" class="btn btn-primary" onclick="location.href={% url 'annot-visu'%}">See visualization</button></a>
         </h1>
     {% for query in blast_results %}
