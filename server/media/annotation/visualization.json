@@ -27,7 +27,7 @@
                     "tooltip": "gnl|BL_ORD_ID|1306 tr|A0A087WNR0|A0A087WNR0_MOUSE Natural resistance-associated macrophage protein 1 OS=Mus musculus OX=10090 GN=Slc11a1 PE=1 SV=1"
                 }
             ],
-            "color": "#C58917",
+            "color": "#AF9B60",
             "label": "chromosome 2",
             "xcolor": "#990000"
         },
@@ -40,7 +40,7 @@
                     "tooltip": "gnl|BL_ORD_ID|2329 tr|E9PVR6|E9PVR6_MOUSE Vomeronasal type-1 receptor OS=Mus musculus OX=10090 GN=Vmn1r1 PE=3 SV=1"
                 }
             ],
-            "color": "#FF0000",
+            "color": "#493D26",
             "label": "chromosome 5",
             "xcolor": "#990000"
         },
@@ -59,7 +59,7 @@
                     "tooltip": "gnl|BL_ORD_ID|357 sp|P41047|TNFL6_MOUSE Tumor necrosis factor ligand superfamily member 6 OS=Mus musculus OX=10090 GN=Faslg PE=1 SV=1"
                 }
             ],
-            "color": "#6F4E37",
+            "color": "#C88141",
             "label": "chromosome 1",
             "xcolor": "#990000"
         }
