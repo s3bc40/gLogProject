@@ -148,52 +148,6 @@ def writeVizuJSON():
     with open('media/annotation/visualization.json','w') as file:
         json.dump(newJson,file,indent=4,sort_keys=True,ensure_ascii=False)      
 
-# {"sequenceLength":255,
-#  "rows":
-#   [
-#    {"label":"Row Label 1",
-#     "color":"#999999",
-#     "xcolor":"#990000",
-# 	"blocks":
-# 	[
-# 	  {	"startPos":25,
-# 		"endPos":37,
-# 		"tooltip":"tooltip for this block",
-# 		"link":"http://google.com"
-# 	  }
-# 	]
-#    },
-#    {"label":"Row Label 2",
-#     "color":"#337700",
-#     "xcolor":"#000088",
-# 	"blocks":
-# 	[
-# 	  {	"startPos":55,
-# 		"endPos":77,
-# 		"tooltip":"tooltip for this block",
-# 		"link":"http://google.com"
-# 	  },
-# 	  {	"startPos":65,
-# 		"endPos":87,
-# 		"tooltip":"tooltip for this block",
-# 		"link":"http://google.com"
-# 	  }
-# 	]
-#    },
-#    {"label":"Row Label 3",
-#     "color":"#880000",
-#     "xcolor":"#008800",
-# 	"blocks":
-# 	[
-# 	  {	"startPos":41,
-# 		"endPos":77,
-# 		"tooltip":"",
-# 		"link":""
-# 	  }
-# 	]
-#    }
-#   ]
-# }
 
 # def getResults():
 #     with open("media/my_blast.xml") as result_handle:
