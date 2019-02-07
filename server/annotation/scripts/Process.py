@@ -18,6 +18,8 @@ from . import Fasta as fasta
 from Bio import SeqIO
 from Bio.Blast.Applications import NcbiblastxCommandline
 from Bio.Blast import NCBIXML, Record
+from socket import error as SocketError
+import errno
 import time
 import json
 import urllib.request
@@ -39,10 +41,13 @@ def writeJsonSeq(listSeqRecord):
 
 def updateDB():
     pathDB = "media/annotation/blastdb/protMM/chrom1MM.fasta"
-    urlChrom1 = "https://www.uniprot.org/uniprot/?query=proteome:UP000000589%20AND%20proteomecomponent:%22Chromosome%201%22&format=fasta"
-    with urllib.request.urlopen(urlChrom1) as response, open(pathDB, 'wb') as out_file:
-        shutil.copyfileobj(response, out_file)
-    subprocess.call('makeblastdb -in media/annotation/blastdb/protMM/chrom1MM.fasta -dbtype prot -out media/annotation/blastdb/protMM/chrom1MM', shell=True)
+    urlChrom1 = "https://www.uniprot.org/uniprot/?query=proteome:UP000000589%20AND%20proteomecomponent:%22Chromosome%201%22&format=fasta"   
+    try:
+        with urllib.request.urlopen(urlChrom1) as response, open(pathDB, 'wb') as out_file:
+            shutil.copyfileobj(response, out_file)
+        subprocess.call('makeblastdb -in media/annotation/blastdb/protMM/chrom1MM.fasta -dbtype prot -out media/annotation/blastdb/protMM/chrom1MM', shell=True)
+    except:
+        return None
 
 def processBlastx(filepath):   
     obj = fasta.multFasta()
@@ -51,7 +56,10 @@ def processBlastx(filepath):
     writeJsonSeq(fastaRec)
 # Blastx : annot fonc  
     # Update option for db (need the chrom1 fasta)
+     # handle error 104 (connection to peer)
     updateDB()
+
+
     # timer=time.time()
     # print("# Lancement Blast #\n")
     blastx_cline = NcbiblastxCommandline(query=filepath, db="media/annotation/blastdb/protMM/chrom1MM",evalue=1e-10 ,outfmt=5, out="media/annotation/my_blast.xml")
